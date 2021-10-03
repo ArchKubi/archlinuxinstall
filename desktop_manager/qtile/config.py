@@ -41,10 +41,10 @@ keys = [
     Key([mod, "shift"], "Down", lazy.layout.shuffle_down(),    desc="Move window down"),
     Key([mod, "shift"], "Up", lazy.layout.shuffle_up(),        desc="Move window up"),
 #-:-------------------------------------------------------------------------:-#
-    Key([mod, "control"], "h", lazy.layout.grow_left(),        desc="Grow window to the left"),
-    Key([mod, "control"], "l", lazy.layout.grow_right(),       desc="Grow window to the right"),
-    Key([mod, "control"], "j", lazy.layout.grow_down(),        desc="Grow window down"),
-    Key([mod, "control"], "k", lazy.layout.grow_up(),          desc="Grow window up"),
+    Key([mod, "control"], "Left", lazy.layout.grow_left(),        desc="Grow window to the left"),
+    Key([mod, "control"], "Right", lazy.layout.grow_right(),       desc="Grow window to the right"),
+    Key([mod, "control"], "Down", lazy.layout.grow_down(),        desc="Grow window down"),
+    Key([mod, "control"], "Up", lazy.layout.grow_up(),          desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(),                   desc="Reset all window sizes"),
 #-:-------------------------------------------------------------------------:-#
     Key([mod, "shift"], "Return", lazy.spawn("thunar"),        desc="Launch thunar"),
@@ -65,6 +65,9 @@ keys = [
     Key([mod, "shift"], "t", lazy.spawn("xfce4-taskmanager")),
     Key([mod, "shift"], "z", lazy.spawn("lxappearance")),
     Key([mod], "g", lazy.spawn("gitkraken")),
+    Key([mod], "l", lazy.spawn("leafpad")),
+    Key([mod], "p", lazy.spawn("pavucontrol")),
+
 #-:-------------------------------------------------------------------------:-#
 ]
 #####################################################################################################################
@@ -72,7 +75,7 @@ keys = [
 
 
 #####################################################################################################################
-groups = [Group(i) for i in "1234"]
+groups = [Group(i) for i in "123456"]
 
 
 for i in groups:
@@ -258,11 +261,19 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                             ),
-                #widget.TextBox("default config", name="default"),
-#background color = 2 "Systray show system background program"
+
+            widget.TextBox(
+                    text=':::',
+                    fontsize="35",
+                    foreground = colors[3],
+                    background = colors[1],
+                    padding=-2,
+                ),
+
             widget.Systray(
-                       background = colors[2],
-                       padding = 5
+                    #Systray show system background program
+                    background = colors[2],
+                    padding = 5
                              ),
 #####################################################################################################################            
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -275,9 +286,17 @@ screens = [
 ##:----------------------------------------------------------------------------------------------------------------:##
 #####################################################################################################################                   
 #background color = 0          
-            
+            widget.Notify(foreground = colors[3],background = colors[0],),
             widget.Volume(foreground = colors[3],background = colors[0],),
 
+            #widget.Battery(
+            #        foreground = colors[3],
+            #        background = colors[0],
+            #        format='{char} {percent:2.0%} {hour:d}:{min:02d}',
+            #    ),
+
+
+####::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::########################################
             widget.Clock(
                        foreground = colors[3],
                        background = colors[0],
