@@ -129,7 +129,7 @@ colors = [["#910c67", "#910c67"], # 0: first and last
 ##############################################################
           ["#2b0223", "#2b0223"], # 2:
 ##############################################################
-          ["#ff0099", "#ff0099"], # 3: TEXT color
+          ["#FCA900", "#FCA900"], # 3: TEXT color
 ##############################################################
           ["#7B0E6E", "#7B0E6E"], # 4: this_screen_border : widget.GroupBox
           ["#ff00a7", "#ff00a7"], # 5: this_current_screen_border : widget.GroupBox
@@ -149,16 +149,18 @@ colors = [["#910c67", "#910c67"], # 0: first and last
 #####################################################################################################################
         ] # 7:
 prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
+
+
+
+
+
+
+
 #####################################################################################################################
-screens = [
-    Screen(
-
-
+screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    Screen(    
         top=bar.Bar(
-            
-            [
-
-                
+            [  ##### Bar Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 #####################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
             widget.TextBox(
@@ -289,8 +291,7 @@ screens = [
                     background = colors[13],
                     padding=-2,
                 ),
-##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##                 
-
+##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
             widget.Prompt(
                        prompt = prompt,
                        font = "sans",
@@ -466,8 +467,11 @@ screens = [
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
-#####################################################################################################################            
-            ],
+            ], ##### Bar Ending XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#####################################################################################################################
+
+
+
 
 ###################### top bar settings#### #########################################################################
             31,
@@ -485,7 +489,7 @@ screens = [
         
         ),
 
-]
+]############################# Screen Ending XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
 
