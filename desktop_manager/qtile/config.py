@@ -222,7 +222,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
            widget.TextBox("Gnu/ArchLinux", foreground = colors[3], background = colors[0], mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("xfce4-appfinder")},),
@@ -230,7 +230,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.TextBox(
@@ -264,7 +264,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.GroupBox(                
@@ -289,7 +289,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.TextBox(
@@ -320,21 +320,21 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
            widget.TextBox(
-                    text='-------------------------------------------',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[13],
+                    text='------------------( Life is Gnu/Linux but More GNU )------------------',
+                    fontsize="20",
+                    foreground = colors[3],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.TextBox(
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.TextBox(
@@ -361,50 +361,6 @@ screens = [
                     name_transform=lambda name: name.upper(),
                             ),
 ######################################################################################################################
-            widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),  
-           widget.TextBox(
-                    text=':',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[13],
-                    padding=-2,
-                ),
-            widget.PulseVolume(
-	            volume_app="pavucontrol",
-	            step=5,
-	            update_interval=0.15,
-                foreground = colors[14],
-                background = colors[13],
-	        ),
-           widget.TextBox(
-                    text=':',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[13],
-                    padding=-2,
-                ),
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
-######################################################################################################################
-##:----------------------------------------------------------------------------------------------------------------:##
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
-##:----------------------------------------------------------------------------------------------------------------:##
 ####Clock#############################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
@@ -418,7 +374,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.Clock(
@@ -430,7 +386,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.TextBox(
@@ -461,7 +417,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.QuickExit(
@@ -474,7 +430,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),   
             widget.TextBox(
@@ -541,7 +497,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),               
             widget.CurrentLayout(
@@ -554,7 +510,52 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
+                    padding=-2,
+                ),
+            widget.TextBox(
+                    text=')',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ), 
+######################################################################################################################
+##:----------------------------------------------------------------------------------------------------------------:##
+            widget.Sep(
+                        linewidth = 1,
+                        padding = 10,
+                        foreground = colors[8],
+                        background = colors[8]
+                        ),
+##:----------------------------------------------------------------------------------------------------------------:##
+######################################################################################################################
+            widget.TextBox(
+                    text='(',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),  
+           widget.TextBox(
+                    text=':',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[0],
+                    padding=-2,
+                ),
+            widget.PulseVolume(
+	            volume_app="pavucontrol",
+	            step=5,
+	            update_interval=0.15,
+                foreground = colors[3],
+                background = colors[0],
+	        ),
+           widget.TextBox(
+                    text=':',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.TextBox(
@@ -579,7 +580,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.Prompt(
@@ -587,13 +588,13 @@ screens = [
                        font = "sans",
                        padding = 10,
                        foreground = colors[11],
-                       background = colors[12]
+                       background = colors[0]
                             ),
             widget.TextBox(
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
 ######################################################################################################################
@@ -617,7 +618,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.WindowName(
@@ -629,7 +630,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.TextBox(
@@ -660,7 +661,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.Systray(
@@ -671,7 +672,7 @@ screens = [
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[13],
+                    background = colors[0],
                     padding=-2,
                 ),
             widget.TextBox(
