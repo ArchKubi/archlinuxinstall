@@ -104,8 +104,8 @@ layout_theme = {"border_width": 2,
 
 #####################################################################################################################
 layouts = [
-    #layout.Columns(margin=8, border_width=6, border_focus="#3b0633", border_normal="#3b062b"),
-    layout.MonadTall(margin=8, border_width=6, border_focus="#910c67", border_normal="#6e0d5b"),
+    layout.Columns(margin=8, border_width=6, border_focus="#910c67", border_normal="#6e0d5b"),
+    #layout.MonadTall(margin=8, border_width=6, border_focus="#910c67", border_normal="#6e0d5b"),
     layout.Max(),
 ]
 #####################################################################################################################
@@ -135,7 +135,7 @@ colors = [["#910c67", "#910c67"], # 0: first and last
           ["#ffffff", "#ffffff"], # 6: active : widget.GroupBox
           ["#000000", "#000000"], # 7: inactive : widget.GroupBox
 ##############################################################
-          ["#4a0747", "#4a0747"], # 8: highlight_color : widget.Sep
+          ["#8a1275", "#8a1275"], # 8: highlight_color : widget.Sep
 ##############################################################
           ["#b31e81", "#b31e81"], # 9: highlight_color : : widget.GroupBox
           ["#5c043e", "#5c043e"], # 10:
@@ -159,12 +159,14 @@ screens = [
 [##### Bar Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ######################################################################################################################
+
             #widget.Memory(
             #         foreground = colors[14],
             #         background = colors[1],
             #         mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(terminal + ' -e htop')},
             #         padding = 5
             #         ),
+            ######################################################################################################################
             #widget.CheckUpdates(
             #         update_interval = 1800,
             #         distro = "Arch_checkupdates",
@@ -173,24 +175,53 @@ screens = [
             #         mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(terminal + ' -e sudo pacman -Syu')},
             #         background = colors[4]
             #         ),
+######################################################################################################################
             #widget.BitcoinTicker(
             #         foreground = colors[2],
             #         background = colors[4],
             #         padding = 5
             #         ),
+######################################################################################################################      
             #widget.Notify(foreground = colors[3],background = colors[0],),
-            #widget.Volume(foreground = colors[3],background = colors[0],),
-            #widget.Battery(
-            #        foreground = colors[3],
-            #        background = colors[0],
-            #        format='{char} {percent:2.0%} {hour:d}:{min:02d}',
-            #    ),
+######################################################################################################################    
+            # widget.BatteryIcon(
+            #           padding=0,
+            #           scale=0.7,
+            #           y_poss=2,
+            #           #theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
+            #           update_interval = 5,
+            #           background = colors[1]),
+######################################################################################################################
             #widget.Backlight(
             #        backlight_name="intel_backlight",
             #        background="d79921",
             #        foreground="282828",
             #    ),
+######################################################################################################################
             #widget.Notify(),
+######################################################################################################################
+            #widget.NetGraph(
+            #          font="Noto Sans",
+            #          fontsize=12,
+            #          bandwidth="down",
+            #          interface="auto",
+            #          fill_color = colors[8],
+            #          foreground=colors[2],
+            #          background=colors[1],
+            #          graph_color = colors[8],
+            #          border_color = colors[2],
+            #          padding = 0,
+            #          border_width = 1,
+            #          line_width = 1,
+            #          ),
+######################################################################################################################
+            # widget.Net(
+            #           fontsize=12,
+            #           #interface="enp2s0", #nmcli device status
+            #           foreground=colors[3],
+            #           background=colors[0],
+            #           padding = 0,
+            #           ),
 ######################################################################################################################
 
 #####################################################################################################################
@@ -202,12 +233,13 @@ screens = [
                     background = colors[1],
                     padding=-2,
                 ),
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ####Gnu/ArchLinux#####################################################################################################
 #background color = 0
@@ -225,7 +257,8 @@ screens = [
                     background = colors[0],
                     padding=-2,
                 ),
-           widget.TextBox("Gnu/ArchLinux", foreground = colors[3], background = colors[0], mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("xfce4-appfinder")},),
+widget.Image(filename="~/.config/qtile/img/arch.jpeg"),
+           widget.TextBox("[Arch-Linux]", foreground = colors[3], background = colors[0], mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("xfce4-appfinder")},),
            widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -244,12 +277,13 @@ screens = [
 ##:----------------------------------------------------------------------------------------------------------------:##
 #####################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ####GroupBox##########################################################################################################
 #background color = 10
@@ -301,12 +335,13 @@ screens = [
                 ), 
 ######################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ####WindowName########################################################################################################            
             widget.TextBox(
@@ -324,7 +359,7 @@ screens = [
                     padding=-2,
                 ),
            widget.TextBox(
-                    text='------------------( Life is Gnu/Linux but More GNU )------------------',
+                    text='-------------------( Life is Gnu/Linux but More GNU )-------------------',
                     fontsize="20",
                     foreground = colors[3],
                     background = colors[0],
@@ -346,12 +381,13 @@ screens = [
                 ),                 
 ######################################################################################################################            
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ######################################################################################################################            
             widget.Chord(
@@ -398,12 +434,13 @@ screens = [
                 ),     
 ######################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ####QuickExit#########################################################################################################
            widget.TextBox(
@@ -442,12 +479,13 @@ screens = [
                 ),                  
 ######################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
             widget.TextBox(
                     text='|~}',
                     fontsize="35",
@@ -478,12 +516,13 @@ screens = [
                     background = colors[1],
                     padding=-2,
                 ),
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ####CurrentLayout#####################################################################################################
             widget.TextBox(
@@ -522,12 +561,13 @@ screens = [
                 ), 
 ######################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ######################################################################################################################
             widget.TextBox(
@@ -551,6 +591,7 @@ screens = [
                 foreground = colors[3],
                 background = colors[0],
 	        ),
+               
            widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -567,12 +608,73 @@ screens = [
                 ), 
 ######################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
+##:----------------------------------------------------------------------------------------------------------------:##
+######################################################################################################################
+            widget.TextBox(
+                    text='(',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),  
+           widget.TextBox(
+                    text=':',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[0],
+                    padding=-2,
+                ),
+            widget.ThermalSensor(
+                      foreground = colors[3],
+                      foreground_alert = colors[6],
+                      background = colors[0],
+                      metric = True,
+                      padding = 3,
+                      threshold = 80
+                      ),
+            widget.CPU(
+                      foreground = colors[3],
+                      background = colors[0],
+                      ),
+            widget.Memory(
+                     font="Noto Sans",
+                      #format = '{MemUsed}M/{MemTotal}M',
+                      update_interval = 1,
+                      fontsize = 12,
+                      foreground = colors[3],
+                      background = colors[0],
+                     ),
+               
+           widget.TextBox(
+                    text=':',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[0],
+                    padding=-2,
+                ),
+            widget.TextBox(
+                    text=')',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ), 
+######################################################################################################################
+##:----------------------------------------------------------------------------------------------------------------:##
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ####Prompt############################################################################################################            
 #background color = 6  
@@ -599,12 +701,13 @@ screens = [
                 ),
 ######################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ####Gnu/ArchLinux#####################################################################################################
             widget.TextBox(
@@ -642,12 +745,13 @@ screens = [
                 ),
 #####################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ####Systray show system background program############################################################################
             widget.TextBox(
@@ -684,12 +788,13 @@ screens = [
                 ), 
 ######################################################################################################################            
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[8],
-                        background = colors[8]
-                        ),
+            widget.TextBox(
+                    text='-',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[1],
+                    padding=-2,
+                ),
             widget.TextBox(
                     text='|~}',
                     fontsize="35",
@@ -702,13 +807,8 @@ screens = [
 
 ], 30),
 #####################################################################################################################
-        
         left=bar.Gap(1),
         right=bar.Gap(1),
-        
-
-        
-        
         )
 ]
 ############################# Screen Ending XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
