@@ -36,7 +36,7 @@ echo "xorg ok!"
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
 read -rsn1 -p "#####LOGİN_SCREEN################################################" variable; echo
-sudo pacman -S lightdm lightdm-webkit2-greeter wget #lightdm-gtk-greeter
+sudo pacman -S lightdm lightdm-webkit2-greeter wget lightdm-gtk-greeter
 systemctl enable lightdm.service
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 
@@ -79,6 +79,10 @@ do
         "Plasma")
         echo "you chose Plasma"
             sudo pacman -S plasma kdeplasma-addons
+            ;;
+        "Qtile")
+        echo "you chose Qtile"
+            sudo pacman -S qtile
             ;;
 
         "Quit")
