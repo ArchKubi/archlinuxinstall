@@ -12,7 +12,7 @@ read -rsn1 -p "install your browser firefox is default //Press Enter" variable; 
 sudo pacman -S 
 
 PS3='Please enter your choice: '
-options=("Mate" "Cinnamon" "Gnome" "Xfce" "Plasma" "Qtile" "Quit")
+options=("Firefox" "Vivaldi" "Opera" "Chromium" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
