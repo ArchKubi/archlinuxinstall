@@ -1,1 +1,1 @@
-yay -S qtile-git
+sudo pacman -S qtile
