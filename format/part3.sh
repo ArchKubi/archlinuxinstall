@@ -31,7 +31,7 @@ echo "pulseaudio ok!" variable; echo
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
 read -rsn1 -p "##########GRAPHİC DRIVER#########################################" variable; echo
-pacman -S xorg-server xorg-apps xorg-xinit
+pacman -S xorg-server xorg-xinit xorg-apps
 echo "xorg ok!"
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
