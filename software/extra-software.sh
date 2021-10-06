@@ -9,4 +9,48 @@ sudo pacman -S intel-ucode
 
 
 read -rsn1 -p "install your browser firefox is default //Press Enter" variable; echo
-sudo pacman -S firefox
+sudo pacman -S 
+
+PS3='Please enter your choice: '
+options=("Mate" "Cinnamon" "Gnome" "Xfce" "Plasma" "Qtile" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Firefox")
+        echo "you chose Firefox"
+            sudo pacman -S firefox
+            ;;
+
+
+        "Cinnamon")
+        echo "you chose Cinnamon"
+            sudo pacman -S cinnamon nemo-fileroller
+            ;;
+
+        "Gnome")
+        echo "you chose Gnome"
+            sudo pacman -S gnome gnome-extra
+            ;;
+
+
+        "Xfce")
+        echo "you chose Xfce"
+            sudo pacman -S xfce4 xfce4-goodies
+            ;;
+
+
+        "Plasma")
+        echo "you chose Plasma"
+            sudo pacman -S plasma kdeplasma-addons
+            ;;
+
+
+        "Qtile")
+        echo "you chose Qtile"
+            sudo pacman -S qtile
+            ;;
+        "Quit")
+            break
+            ;;
+    esac
+done
