@@ -1,4 +1,5 @@
 read -rsn1 -p "#greeter-session=  --> greeter-session=lightdm-webkit2-greeter" variable; echo
+wget git.io/webkit2 -O theme.tar.gz
 mkdir glorious
 mv theme.tar.gz glorious/
 cd glorious

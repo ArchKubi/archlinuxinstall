@@ -82,11 +82,6 @@ do
             sudo pacman -S plasma kdeplasma-addons
             ;;
 
-
-        "Qtile")
-        echo "you chose Qtile"
-            sudo pacman -S qtile
-            ;;
         "Quit")
             break
             ;;
