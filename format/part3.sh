@@ -31,12 +31,12 @@ echo "pulseaudio ok!" variable; echo
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
 read -rsn1 -p "##########GRAPHİC DRIVER#########################################" variable; echo
-pacman -S xorg-server xorg-xinit xorg-apps
+pacman -S xorg xorg-server xorg-xinit xorg-apps
 echo "xorg ok!"
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
 read -rsn1 -p "#####LOGİN_SCREEN################################################" variable; echo
-sudo pacman -S lightdm lightdm-gtk-greeter lightdm-webkit2-greeter wget 
+sudo pacman -S lightdm lightdm-webkit2-greeter wget #lightdm-gtk-greeter
 systemctl enable lightdm.service
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 
