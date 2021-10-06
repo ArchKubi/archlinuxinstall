@@ -752,6 +752,7 @@ widget.Image(filename="~/.config/qtile/img/arch.jpeg"),
                     background = colors[1],
                     padding=-2,
                 ), 
+
            widget.TextBox(
                     text=':',
                     fontsize="35",
