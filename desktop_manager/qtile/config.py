@@ -259,6 +259,7 @@ screens = [
                 ),
 widget.Image(filename="~/.config/qtile/img/arch.jpeg"),
            widget.TextBox("[Arch-Linux]", foreground = colors[3], background = colors[0], mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("xfce4-appfinder")},),
+widget.Image(filename="~/.config/qtile/img/arch.jpeg"),
            widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -359,7 +360,7 @@ widget.Image(filename="~/.config/qtile/img/arch.jpeg"),
                     padding=-2,
                 ),
            widget.TextBox(
-                    text='-------------------( Life is Gnu/Linux but More GNU )-------------------',
+                    text='----------------( Life is Gnu/Linux but More GNU )----------------',
                     fontsize="20",
                     foreground = colors[3],
                     background = colors[0],
@@ -639,10 +640,30 @@ widget.Image(filename="~/.config/qtile/img/arch.jpeg"),
                       padding = 3,
                       threshold = 80
                       ),
+
+           widget.TextBox(
+                    text='|',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[0],
+                    padding=-2,
+                ),
+
+
             widget.CPU(
                       foreground = colors[3],
                       background = colors[0],
                       ),
+
+           widget.TextBox(
+                    text='|',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[0],
+                    padding=-2,
+                ),
+
+
             widget.Memory(
                      font="Noto Sans",
                       #format = '{MemUsed}M/{MemTotal}M',
@@ -685,6 +706,13 @@ widget.Image(filename="~/.config/qtile/img/arch.jpeg"),
                     background = colors[0],
                     padding=-2,
                 ),
+           widget.TextBox(
+                    text='|',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[0],
+                    padding=-2,
+                ),
             widget.Prompt(
                        prompt = prompt,
                        font = "sans",
@@ -692,6 +720,13 @@ widget.Image(filename="~/.config/qtile/img/arch.jpeg"),
                        foreground = colors[11],
                        background = colors[0]
                             ),
+           widget.TextBox(
+                    text='|',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[0],
+                    padding=-2,
+                ),
             widget.TextBox(
                     text=':',
                     fontsize="35",
