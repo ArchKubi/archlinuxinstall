@@ -22,33 +22,22 @@ do
             ;;
 
 
-        "Cinnamon")
-        echo "you chose Cinnamon"
-            sudo pacman -S cinnamon nemo-fileroller
+        "Vivaldi")
+        echo "you chose Vivaldi"
+            sudo pacman -S vivaldi vivaldi-ffmpeg-codecs
             ;;
 
-        "Gnome")
-        echo "you chose Gnome"
-            sudo pacman -S gnome gnome-extra
-            ;;
-
-
-        "Xfce")
-        echo "you chose Xfce"
-            sudo pacman -S xfce4 xfce4-goodies
+        "Opera")
+        echo "you chose Opera"
+            sudo pacman -S opera opera-ffmpeg-codecs
             ;;
 
 
-        "Plasma")
-        echo "you chose Plasma"
-            sudo pacman -S plasma kdeplasma-addons
+        "Chromium")
+        echo "you chose Chromium"
+            sudo pacman -S chromium
             ;;
 
-
-        "Qtile")
-        echo "you chose Qtile"
-            sudo pacman -S qtile
-            ;;
         "Quit")
             break
             ;;
