@@ -59,7 +59,6 @@ do
             sudo pacman -S mate mate-extra
             ;;
 
-
         "Cinnamon")
         echo "you chose Cinnamon"
             sudo pacman -S cinnamon nemo-fileroller
