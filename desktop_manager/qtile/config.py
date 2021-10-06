@@ -804,10 +804,24 @@ widget.Image(filename="~/.config/qtile/img/arch.jpeg"),
                     background = colors[0],
                     padding=-2,
                 ),
+           widget.TextBox(
+                    text='|',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[0],
+                    padding=-2,
+                ),
             widget.Systray(
                     background = colors[0],
                     padding = 5
                              ),
+           widget.TextBox(
+                    text='|',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[0],
+                    padding=-2,
+                ),
             widget.TextBox(
                     text=':',
                     fontsize="35",
