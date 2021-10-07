@@ -7,6 +7,7 @@ sudo pacman -S variety pavucontrol xfce4-appfinder xfce4-taskmanager thunar rofi
 echo sudo pacman -S amd-ucode or 
 sudo pacman -S intel-ucode
 
+sudo pacman -Rdd adwaita-icon-theme
 
 read -rsn1 -p "install your browser firefox is default //Press Enter" variable; echo
 sudo pacman -S 
