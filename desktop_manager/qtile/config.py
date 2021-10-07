@@ -360,7 +360,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     padding=-2,
                 ),
            widget.TextBox(
-                    text='----------------( Life is Gnu/Linux but More GNU )-------------------',
+                    text='-----------------( Life is Gnu/Linux but More GNU )------------------',
                     fontsize="20",
                     foreground = colors[3],
                     background = colors[0],
