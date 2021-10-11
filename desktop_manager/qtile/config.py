@@ -126,14 +126,14 @@ colors = [["#0d0d0d", "#0d0d0d"], # 0: first and last
           ["#a8a8a8", "#a8a8a8"], # 3: TEXT color
 ##############################################################
           ["#009b63", "#009b63"], # 4: this_screen_border : widget.GroupBox
-          ["#505050", "#505050"], # 5: this_current_screen_border : widget.GroupBox
+          ["#213fd1", "#213fd1"], # 5: this_current_screen_border : widget.GroupBox
           ["#ffffff", "#ffffff"], # 6: active : widget.GroupBox
           ["#000000", "#000000"], # 7: inactive : widget.GroupBox
 ##############################################################
           ["#004f32", "#004f32"], # 8: 
 ##############################################################
-          ["#787878", "#787878"], # 9: highlight_color : : widget.GroupBox #Number Box
-          ["#5c043e", "#5c043e"], # 10:
+          ["#002bff", "#002bff"], # 9: highlight_color : : widget.GroupBox #Number Box
+          ["#131a3d", "#131a3d"], # 10:
 ##############################################################
           ["#d7fcf9", "#d7fcf9"], # 11: Prompt text color
           ["#bd089f", "#bd089f"], # 12: Prompt background color
@@ -232,13 +232,13 @@ widget.Spacer(background = colors[1],),
 
 ####Gnu/ArchLinux#####################################################################################################
 #background color = 0
-            widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ),
+
             widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -256,22 +256,21 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     background = colors[13],
                     padding=-2,
                 ),
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),  
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ),  
 #####################################################################################################################
 
 
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.TextBox(
-                    text='-',
+           widget.TextBox(
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[0],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -279,13 +278,12 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 
 ####GroupBox##########################################################################################################
 #background color = 10
-            widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ), 
             widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -309,7 +307,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                        this_screen_border = colors [4],
                        other_current_screen_border = colors[5],
                        other_screen_border = colors[4],
-                       background = colors[0]
+                       background = colors[10]
                                 ),
             widget.TextBox(
                     text=':',
@@ -318,35 +316,33 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     background = colors[13],
                     padding=-2,
                 ),
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ), 
 ######################################################################################################################
 
 
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.TextBox(
-                    text='-',
+           widget.TextBox(
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[0],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 
 
 ####WindowName########################################################################################################            
-            widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ), 
            widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -355,7 +351,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     padding=-2,
                 ),
            widget.TextBox(
-                    text='-----------------( Life is Gnu/Linux but More GNU )------------------',
+                    text='-----------( Life is Gnu/Linux but More GNU )------------',
                     fontsize="20",
                     foreground = colors[3],
                     background = colors[0],
@@ -368,22 +364,21 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     background = colors[13],
                     padding=-2,
                 ),
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),                 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ),                 
 ######################################################################################################################            
 
 
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.TextBox(
-                    text='-',
+           widget.TextBox(
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[0],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -402,13 +397,12 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 
 ####Clock#############################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
-           widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ), 
            widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -428,35 +422,33 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     background = colors[13],
                     padding=-2,
                 ),
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),     
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ),     
 ######################################################################################################################
 
 
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.TextBox(
-                    text='-',
+           widget.TextBox(
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[0],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 
 
 ####QuickExit#########################################################################################################
-           widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ), 
             widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -477,13 +469,12 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     background = colors[13],
                     padding=-2,
                 ),   
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),                  
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ),                  
 ######################################################################################################################
 
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -529,24 +520,22 @@ bottom=bar.Bar([
                     background = colors[1],
                     padding=-2,
                 ),
-            widget.TextBox(
-                    text='-',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ),  
 ##:----------------------------------------------------------------------------------------------------------------:##
 
 
 ####CurrentLayout#####################################################################################################
-            widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ), 
             widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -567,35 +556,33 @@ bottom=bar.Bar([
                     background = colors[13],
                     padding=-2,
                 ),
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ), 
 ######################################################################################################################
 
 
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.TextBox(
-                    text='-',
+           widget.TextBox(
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[0],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 
 
 #####pulsevolume######################################################################################################
-           widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),  
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ),  
            widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -618,35 +605,33 @@ bottom=bar.Bar([
                     background = colors[13],
                     padding=-2,
                 ),
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ), 
 ######################################################################################################################
 
 
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.TextBox(
-                    text='-',
+           widget.TextBox(
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[0],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 
 
 ####Thermalsensor,cpu,memory##########################################################################################
-            widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),  
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ), 
            widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -702,22 +687,21 @@ bottom=bar.Bar([
                     background = colors[13],
                     padding=-2,
                 ),
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ),
 ######################################################################################################################
 
 
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.TextBox(
-                    text='-',
+           widget.TextBox(
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[0],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -764,24 +748,23 @@ bottom=bar.Bar([
 
 
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.TextBox(
-                    text='-',
+           widget.TextBox(
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[0],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 
 
 ####WindowName########################################################################################################
-            widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ), 
 
            widget.TextBox(
                     text=':',
@@ -802,35 +785,33 @@ bottom=bar.Bar([
                     background = colors[13],
                     padding=-2,
                 ),
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ),
 #####################################################################################################################
 
 
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.TextBox(
-                    text='-',
+           widget.TextBox(
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[0],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 
 
 ####Systray show system background program############################################################################
-            widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ), 
             widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -863,21 +844,19 @@ bottom=bar.Bar([
                     background = colors[13],
                     padding=-2,
                 ),
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ), 
 ######################################################################################################################            
-            widget.TextBox(
-                    text='-',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),
+            widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[14],
+                       background = colors[13]
+                       ),  
             widget.TextBox(
                     text='|~}',
                     fontsize="35",
