@@ -118,22 +118,22 @@ extension_defaults = widget_defaults.copy()
 
 
 #####################################################################################################################
-colors = [["#0d0d0d", "#0d0d0d"], # 0: first and last 
-          ["#343434", "#343434"], # 1: 
+colors = [["#0c0c0c", "#0c0c0c"], # 0: first and last 
+          ["#323232", "#323232"], # 1: 
 ##############################################################
           ["#113342", "#113342"], # 2:
 ##############################################################
           ["#a8a8a8", "#a8a8a8"], # 3: TEXT color
 ##############################################################
-          ["#009b63", "#009b63"], # 4: this_screen_border : widget.GroupBox
-          ["#213fd1", "#213fd1"], # 5: this_current_screen_border : widget.GroupBox
+          ["#252525", "#252525"], # 4: this_screen_border : widget.GroupBox : ??????????
+          ["#858585", "#858585"], # 5: this_current_screen_border : widget.GroupBox
           ["#ffffff", "#ffffff"], # 6: active : widget.GroupBox
           ["#000000", "#000000"], # 7: inactive : widget.GroupBox
 ##############################################################
-          ["#004f32", "#004f32"], # 8: 
+          ["#262626", "#262626"], # 8: widget.Sep
 ##############################################################
-          ["#002bff", "#002bff"], # 9: highlight_color : : widget.GroupBox #Number Box
-          ["#131a3d", "#131a3d"], # 10:
+          ["#323232", "#323232"], # 9: highlight_color : : widget.GroupBox #Number Box
+          ["#5a5a5a", "#5a5a5a"], # 10: groupbox background
 ##############################################################
           ["#d7fcf9", "#d7fcf9"], # 11: Prompt text color
           ["#bd089f", "#bd089f"], # 12: Prompt background color
@@ -213,6 +213,23 @@ screens = [
             #           padding = 0,
             #           ),
 ######################################################################################################################
+            # widget.ThermalSensor(
+            #           foreground = colors[3],
+            #           foreground_alert = colors[6],
+            #           background = colors[0],
+            #           metric = True,
+            #           padding = 3,
+            #           threshold = 80
+            #           ),
+            # widget.Memory(
+            #          font="Noto Sans",
+            #           #format = '{MemUsed}M/{MemTotal}M',
+            #           update_interval = 1,
+            #           fontsize = 12,
+            #           foreground = colors[3],
+            #           background = colors[0],
+            #          ),
+######################################################################################################################
 
 
 
@@ -236,7 +253,7 @@ widget.Spacer(background = colors[1],),
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ),
 
             widget.TextBox(
@@ -260,7 +277,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ),  
 #####################################################################################################################
 
@@ -282,7 +299,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ), 
             widget.TextBox(
                     text=':',
@@ -320,7 +337,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ), 
 ######################################################################################################################
 
@@ -341,7 +358,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ), 
            widget.TextBox(
                     text=':',
@@ -368,7 +385,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ),                 
 ######################################################################################################################            
 
@@ -401,7 +418,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ), 
            widget.TextBox(
                     text=':',
@@ -426,7 +443,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ),     
 ######################################################################################################################
 
@@ -447,7 +464,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ), 
             widget.TextBox(
                     text=':',
@@ -473,7 +490,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ),                  
 ######################################################################################################################
 
@@ -524,18 +541,12 @@ bottom=bar.Bar([
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ),  
 ##:----------------------------------------------------------------------------------------------------------------:##
 
 
 ####CurrentLayout#####################################################################################################
-            widget.Sep(
-                       linewidth = 0,
-                       padding = 6,
-                       foreground = colors[14],
-                       background = colors[13]
-                       ), 
             widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -560,7 +571,7 @@ bottom=bar.Bar([
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ), 
 ######################################################################################################################
 
@@ -581,7 +592,7 @@ bottom=bar.Bar([
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ),  
            widget.TextBox(
                     text=':',
@@ -609,7 +620,7 @@ bottom=bar.Bar([
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ), 
 ######################################################################################################################
 
@@ -630,7 +641,7 @@ bottom=bar.Bar([
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ), 
            widget.TextBox(
                     text=':',
@@ -639,47 +650,12 @@ bottom=bar.Bar([
                     background = colors[13],
                     padding=-2,
                 ),
-            widget.ThermalSensor(
-                      foreground = colors[3],
-                      foreground_alert = colors[6],
-                      background = colors[0],
-                      metric = True,
-                      padding = 3,
-                      threshold = 80
-                      ),
-
-           widget.TextBox(
-                    text='|',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
-
 
             widget.CPU(
                       foreground = colors[3],
                       background = colors[0],
                       ),
 
-           widget.TextBox(
-                    text='|',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
-
-
-            widget.Memory(
-                     font="Noto Sans",
-                      #format = '{MemUsed}M/{MemTotal}M',
-                      update_interval = 1,
-                      fontsize = 12,
-                      foreground = colors[3],
-                      background = colors[0],
-                     ),
-               
            widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -691,7 +667,7 @@ bottom=bar.Bar([
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ),
 ######################################################################################################################
 
@@ -763,7 +739,7 @@ bottom=bar.Bar([
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ), 
 
            widget.TextBox(
@@ -789,7 +765,7 @@ bottom=bar.Bar([
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ),
 #####################################################################################################################
 
@@ -810,7 +786,7 @@ bottom=bar.Bar([
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ), 
             widget.TextBox(
                     text=':',
@@ -844,18 +820,12 @@ bottom=bar.Bar([
                     background = colors[13],
                     padding=-2,
                 ),
-            widget.Sep(
-                       linewidth = 0,
-                       padding = 6,
-                       foreground = colors[14],
-                       background = colors[13]
-                       ), 
 ######################################################################################################################            
             widget.Sep(
                        linewidth = 0,
                        padding = 6,
                        foreground = colors[14],
-                       background = colors[13]
+                       background = colors[8]
                        ),  
             widget.TextBox(
                     text='|~}',
