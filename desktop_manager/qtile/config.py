@@ -118,10 +118,10 @@ extension_defaults = widget_defaults.copy()
 
 
 #####################################################################################################################
-colors = [["#0c0c0c", "#0c0c0c"], # 0: first and last 
+colors = [["#191919", "#191919"], # 0: first and last 
           ["#323232", "#323232"], # 1: 
 ##############################################################
-          ["#113342", "#113342"], # 2:
+          ["#113342", "#113342"], # 2: -|- color
 ##############################################################
           ["#a8a8a8", "#a8a8a8"], # 3: TEXT color
 ##############################################################
@@ -287,7 +287,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[2],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -347,7 +347,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[2],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -395,7 +395,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[2],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -453,7 +453,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[2],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -581,7 +581,7 @@ bottom=bar.Bar([
                     text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[2],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -630,7 +630,7 @@ bottom=bar.Bar([
                     text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[2],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -677,7 +677,7 @@ bottom=bar.Bar([
                     text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[2],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -728,7 +728,7 @@ bottom=bar.Bar([
                     text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[2],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -775,7 +775,7 @@ bottom=bar.Bar([
                     text='-|-',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[2],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
