@@ -366,13 +366,17 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     background = colors[13],
                     padding=-2,
                 ),
+widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
+
            widget.TextBox(
-                    text='-----------( Life is Gnu/Linux but More GNU )------------',
+                    text='------( Life is Gnu/Linux but More GNU )------',
                     fontsize="20",
                     foreground = colors[3],
                     background = colors[0],
                     padding=-2,
                 ),
+widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
+
             widget.TextBox(
                     text=':',
                     fontsize="35",
