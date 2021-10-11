@@ -255,7 +255,6 @@ widget.Spacer(background = colors[1],),
                        foreground = colors[14],
                        background = colors[8]
                        ),
-
             widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -284,7 +283,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|-',
+                    text='-|||-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -344,7 +343,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|-',
+                    text='-|||-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -392,7 +391,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|-',
+                    text='-|||-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -450,7 +449,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|-',
+                    text='-|||-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -578,7 +577,7 @@ bottom=bar.Bar([
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|-',
+                    text='-|||-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -627,7 +626,7 @@ bottom=bar.Bar([
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|-',
+                    text='-|||-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -674,7 +673,7 @@ bottom=bar.Bar([
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|-',
+                    text='-|||-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -725,7 +724,7 @@ bottom=bar.Bar([
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|-',
+                    text='-|||-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -772,7 +771,7 @@ bottom=bar.Bar([
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|-',
+                    text='-|||-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
