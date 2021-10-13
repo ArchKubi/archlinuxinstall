@@ -24,7 +24,7 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 read -rsn1 -p "######SYSTEM LANGUAGE############################################" variable; echo
 #---------------------------------------------------------------#
-#: Turkish Language = tr_TR.UTF-8 
+read -rsn1 -p "dont forget part2.sh : Turkish Language = tr_TR.UTF-8  //Press Enter" variable; echo
 echo "LC_ALL=en_US.UTF-8" >> /etc/environment
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
