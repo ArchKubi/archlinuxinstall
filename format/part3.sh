@@ -50,7 +50,9 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 read -rsn1 -p "########Gui selection############################################" variable; echo
 echo "please dont forget quit"
 PS3='Please enter your choice: '
-options=("Mate" "Cinnamon" "Gnome" "Xfce" "Plasma" "Qtile" "Quit")
+
+
+options=("Mate" "Cinnamon" "Gnome" "Xfce" "Plasma" "Budgie" "Qtile" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -80,10 +82,18 @@ do
         echo "you chose Plasma"
             sudo pacman -S plasma kdeplasma-addons
             ;;
+
+        "Budgie")
+        echo "you chose Budgie"
+            sudo pacman -S budgie-desktop
+            ;;
+
         "Qtile")
         echo "you chose Qtile"
             sudo pacman -S qtile
             ;;
+
+            
 
         "Quit")
             break
