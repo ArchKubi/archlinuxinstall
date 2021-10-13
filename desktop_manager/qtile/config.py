@@ -63,7 +63,7 @@ keys = [#-:---------------------------------------------------------------------
     Key([mod, "shift"], "s", lazy.spawn("scrot -s")),
     Key([mod, "shift"], "t", lazy.spawn("xfce4-taskmanager")),
     Key([mod, "shift"], "z", lazy.spawn("lxappearance")),
-    Key([mod], "g", lazy.spawn("gitkraken")),
+    Key([mod], "g", lazy.spawn("github-desktop")),
     Key([mod], "l", lazy.spawn("leafpad")),
     Key([mod], "p", lazy.spawn("pavucontrol")),
 
