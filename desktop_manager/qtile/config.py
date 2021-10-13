@@ -860,7 +860,7 @@ floating_layout = layout.Floating(float_rules=[
     Match(wm_class='ssh-askpass'),  # ssh-askpass
     Match(title='branchdialog'),  # gitk
     Match(title='pinentry'),  # GPG key password entry
-    Match(title='test window') #not tiling window
+    Match(title='OpenSoftware'), #not tiling window
 ])
 #####################################################################################################################
 

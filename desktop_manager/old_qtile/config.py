@@ -27,24 +27,23 @@ terminal = guess_terminal("xfce4-terminal")
 
 
 #####################################################################################################################
-keys = [
-
-#-:-------------------------------------------------------------------------:-#
+keys = [#-:-------------------------------------------------------------------------:-#
     Key([mod], "Up", lazy.layout.up()),
     Key([mod], "Down", lazy.layout.down()),
     Key([mod], "Left", lazy.layout.left()),
     Key([mod], "Right", lazy.layout.right()),
     #Key([mod], "space", lazy.layout.next(),  desc="Move window focus to other window"),
-#-:-------------------------------------------------------------------------:-#
+
     Key([mod, "shift"], "Left", lazy.layout.shuffle_left(),    desc="Move window to the left"),
     Key([mod, "shift"], "Right", lazy.layout.shuffle_right(),  desc="Move window to the right"),
     Key([mod, "shift"], "Down", lazy.layout.shuffle_down(),    desc="Move window down"),
     Key([mod, "shift"], "Up", lazy.layout.shuffle_up(),        desc="Move window up"),
-#-:-------------------------------------------------------------------------:-#
+
     Key([mod, "control"], "Left", lazy.layout.grow_left(),        desc="Grow window to the left"),
     Key([mod, "control"], "Right", lazy.layout.grow_right(),       desc="Grow window to the right"),
     Key([mod, "control"], "Down", lazy.layout.grow_down(),        desc="Grow window down"),
     Key([mod, "control"], "Up", lazy.layout.grow_up(),          desc="Grow window up"),
+    
     Key([mod], "n", lazy.layout.normalize(),                   desc="Reset all window sizes"),
 #-:-------------------------------------------------------------------------:-#
     Key([mod, "shift"], "Return", lazy.spawn("thunar"),        desc="Launch thunar"),
@@ -68,8 +67,7 @@ keys = [
     Key([mod], "l", lazy.spawn("leafpad")),
     Key([mod], "p", lazy.spawn("pavucontrol")),
 
-#-:-------------------------------------------------------------------------:-#
-]
+]#-:-------------------------------------------------------------------------:-#
 #####################################################################################################################
 
 
@@ -106,7 +104,7 @@ layout_theme = {"border_width": 2,
 #####################################################################################################################
 layouts = [
     #layout.Columns(margin=8, border_width=6, border_focus="#3b0633", border_normal="#3b062b"),
-    layout.MonadTall(margin=8, border_width=6, border_focus="#910c67", border_normal="#6e0d5b"),
+    layout.MonadTall(margin=8, border_width=6, border_focus="#08000d", border_normal="#08000d"),
     layout.Max(),
 ]
 #####################################################################################################################
@@ -124,28 +122,28 @@ extension_defaults = widget_defaults.copy()
 
 
 #####################################################################################################################
-colors = [["#910c67", "#910c67"], # 0: first and last 
-          ["#6e0d5b", "#6e0d5b"], # 1: 
+colors = [["#191919", "#191919"], # 0: first and last 
+          ["#323232", "#323232"], # 1: 
 ##############################################################
-          ["#2b0223", "#2b0223"], # 2:
+          ["#113342", "#113342"], # 2: -|- color
 ##############################################################
-          ["#FCA900", "#FCA900"], # 3: TEXT color
+          ["#a8a8a8", "#a8a8a8"], # 3: TEXT color
 ##############################################################
-          ["#7B0E6E", "#7B0E6E"], # 4: this_screen_border : widget.GroupBox
-          ["#ff00a7", "#ff00a7"], # 5: this_current_screen_border : widget.GroupBox
+          ["#252525", "#252525"], # 4: this_screen_border : widget.GroupBox : ??????????
+          ["#858585", "#858585"], # 5: this_current_screen_border : widget.GroupBox
           ["#ffffff", "#ffffff"], # 6: active : widget.GroupBox
           ["#000000", "#000000"], # 7: inactive : widget.GroupBox
 ##############################################################
-          ["#4a0747", "#4a0747"], # 8: highlight_color : widget.Sep
+          ["#262626", "#262626"], # 8: widget.Sep
 ##############################################################
-          ["#b31e81", "#b31e81"], # 9: highlight_color : : widget.GroupBox
-          ["#5c043e", "#5c043e"], # 10:
+          ["#323232", "#323232"], # 9: highlight_color : : widget.GroupBox #Number Box
+          ["#5a5a5a", "#5a5a5a"], # 10: groupbox background
 ##############################################################
           ["#d7fcf9", "#d7fcf9"], # 11: Prompt text color
           ["#bd089f", "#bd089f"], # 12: Prompt background color
 ##############################################################  
-          ["#570648", "#570648"], # 13: ":" background color 
-          ["#ff00d2", "#ff00d2"]  # 14: ":" color
+          ["#5a5a5a", "#5a5a5a"], # 13: ":" background color 
+          ["#bcbcbc", "#bcbcbc"]  # 14: ":" color
 #####################################################################################################################
         ] # 7:
 prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
