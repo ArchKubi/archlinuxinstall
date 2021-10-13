@@ -367,7 +367,6 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     padding=-2,
                 ),
 widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
-
            widget.TextBox(
                     text='------( Life is Gnu/Linux but More GNU )------',
                     fontsize="20",
@@ -376,7 +375,6 @@ widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
                     padding=-2,
                 ),
 widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
-
             widget.TextBox(
                     text=':',
                     fontsize="35",
@@ -512,7 +510,10 @@ widget.Spacer(background = colors[1],),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ],
 30),
-#####################################################################################################################
+##############end top var#############################################################################################
+
+
+
 
 
 
@@ -521,15 +522,6 @@ widget.Spacer(background = colors[1],),
 
 ################# Bottom Bar ########################################################################################
 #####################################################################################################################
-
-
-
-
-
-
-
-
-
 bottom=bar.Bar([
 #####################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -707,7 +699,7 @@ bottom=bar.Bar([
                        font = "sans",
                        padding = 10,
                        foreground = colors[11],
-                       background = colors[0]
+                       background = colors[12]
                             ),
            widget.TextBox(
                     text='|',
@@ -840,11 +832,6 @@ bottom=bar.Bar([
 ######################################################################################################################
 ], 30),left=bar.Gap(1),right=bar.Gap(1), )]
 ############################# Screen Ending XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-
-
-
-
 
 
 
