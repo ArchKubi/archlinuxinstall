@@ -136,7 +136,7 @@ colors = [["#191919", "#191919"], # 0: first and last
           ["#5a5a5a", "#5a5a5a"], # 10: groupbox background
 ##############################################################
           ["#d7fcf9", "#d7fcf9"], # 11: Prompt text color
-          ["#bd089f", "#bd089f"], # 12: Prompt background color
+          ["#1a0416", "#1a0416"], # 12: Prompt background color
 ##############################################################  
           ["#5a5a5a", "#5a5a5a"], # 13: ":" background color 
           ["#bcbcbc", "#bcbcbc"]  # 14: ":" color
