@@ -125,7 +125,7 @@ extension_defaults = widget_defaults.copy()
 colors = [["#191919", "#191919"], # 0: first and last 
           ["#323232", "#323232"], # 1: 
 ##############################################################
-          ["#113342", "#113342"], # 2: -|- color
+          ["#113342", "#113342"], # 2: 
 ##############################################################
           ["#a8a8a8", "#a8a8a8"], # 3: TEXT color
 ##############################################################
@@ -137,7 +137,7 @@ colors = [["#191919", "#191919"], # 0: first and last
           ["#262626", "#262626"], # 8: widget.Sep
 ##############################################################
           ["#323232", "#323232"], # 9: highlight_color : : widget.GroupBox #Number Box
-          ["#5a5a5a", "#5a5a5a"], # 10: groupbox background
+          ["#5a5a5a", "#5a5a5a"], # 10: 
 ##############################################################
           ["#d7fcf9", "#d7fcf9"], # 11: Prompt text color
           ["#bd089f", "#bd089f"], # 12: Prompt background color
@@ -205,7 +205,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ##:----------------------------------------------------------------------------------------------------------------:##
 #####################################################################################################################
             widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -220,7 +220,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                                     ),
 ##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
             widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -238,7 +238,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 #####################################################################################################################
 #background color = 10
             widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -265,7 +265,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                                 ),
 ##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
             widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -283,7 +283,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 #####################################################################################################################            
 #background color = 6  
             widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -295,11 +295,11 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                        font = "sans",
                        padding = 10,
                        foreground = colors[11],
-                       background = colors[12]
+                       background = colors[13]
                             ),
 ##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
             widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -316,7 +316,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ##:----------------------------------------------------------------------------------------------------------------:##
 #####################################################################################################################            
            widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -330,7 +330,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                                 ),
 ##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
             widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -354,7 +354,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                             ),
 
             widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -369,7 +369,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
                         widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -397,7 +397,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 #####################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -411,7 +411,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                             ),
 ##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
             widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -428,7 +428,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ##:----------------------------------------------------------------------------------------------------------------:##
 #####################################################################################################################
             widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -443,7 +443,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                                  ),
 ##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
             widget.TextBox(
-                    text=':',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
