@@ -403,12 +403,12 @@ widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
 
 
 ######################################################################################################################            
-            widget.Chord(
-                    chords_colors={
-                        'launch': ("#420a57", "#690348"), # #ff0000 , #ffffff
-                    },
-                    name_transform=lambda name: name.upper(),
-                            ),
+            # widget.Chord(
+            #         chords_colors={
+            #             'launch': ("#420a57", "#690348"), # #ff0000 , #ffffff
+            #         },
+            #         name_transform=lambda name: name.upper(),
+            #                 ),
 ######################################################################################################################
 
 
