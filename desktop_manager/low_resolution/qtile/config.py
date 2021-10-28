@@ -188,7 +188,7 @@ widget.Spacer(background = colors[1],),
                 ),
 ##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
 widget.Image(filename="~/.config/qtile/img/ram.png",background = colors[0],),
-           widget.TextBox("[Arch-Linux]", foreground = colors[3], background = colors[0], mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("xfce4-appfinder")},),
+           widget.TextBox(" [Arch-Linux] ", foreground = colors[3], background = colors[0], mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("xfce4-appfinder")},),
 widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
  ##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
             widget.TextBox(
@@ -261,7 +261,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                 ),
 widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
            widget.TextBox(
-                    text='(Life is Gnu/Linux but More GNU)',
+                    text='(Life is Gnu/Linux)',
                     fontsize="20",
                     foreground = colors[3],
                     background = colors[0],
