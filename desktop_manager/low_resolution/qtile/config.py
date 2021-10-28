@@ -168,11 +168,12 @@ screens = [
                         foreground = colors[8],
                         background = colors[8]
                         ),
+widget.Spacer(background = colors[1],),
 ##:----------------------------------------------------------------------------------------------------------------:##
 #####################################################################################################################
 #background color = 0
             widget.TextBox(
-                    text=':',
+                    text='|-:',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -184,15 +185,24 @@ widget.Image(filename="~/.config/qtile/img/ram.png",background = colors[0],),
 widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
  ##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
             widget.TextBox(
-                    text=':',
+                    text=':-|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
                     padding=-2,
                 ),
 #####################################################################################################################
+
+            widget.Sep(
+                        linewidth = 1,
+                        padding = 10,
+                        foreground = colors[8],
+                        background = colors[8]
+                        ),
+
+#####################################################################################################################
             widget.TextBox(
-                    text='|',
+                    text='|-:',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -219,13 +229,29 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                                 ),
 
             widget.TextBox(
-                    text='|',
+                    text=':-|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
                     padding=-2,
                 ),
+#####################################################################################################################
 
+            widget.Sep(
+                        linewidth = 1,
+                        padding = 10,
+                        foreground = colors[8],
+                        background = colors[8]
+                        ),
+
+#####################################################################################################################
+            widget.TextBox(
+                    text='|-:',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[13],
+                    padding=-2,
+                ),
 widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
            widget.TextBox(
                     text='(Life is Gnu/Linux but More GNU)',
@@ -237,21 +263,56 @@ widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
 widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
             
             widget.TextBox(
-                    text='|',
+                    text=':-|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
                     padding=-2,
                 ),
-            
+#####################################################################################################################
+ 
+             widget.Sep(
+                        linewidth = 1,
+                        padding = 10,
+                        foreground = colors[8],
+                        background = colors[8]
+                        ),
+
+ #####################################################################################################################
+            widget.TextBox(
+                    text='|-:',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[13],
+                    padding=-2,
+                ),
+
             widget.Systray(
                     #Systray show system background program
                     background = colors[0],
                     padding = 5
                              ),
 
-             widget.TextBox(
-                    text='|',
+            widget.TextBox(
+                    text=':-|',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[13],
+                    padding=-2,
+                ),
+
+#####################################################################################################################
+
+            widget.Sep(
+                        linewidth = 1,
+                        padding = 10,
+                        foreground = colors[8],
+                        background = colors[8]
+                        ),
+
+#####################################################################################################################
+            widget.TextBox(
+                    text='|-:',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
@@ -265,10 +326,35 @@ widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
                             ),
 
             widget.TextBox(
-                    text='|',
+                    text=':-|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
+                    padding=-2,
+                ),
+#####################################################################################################################
+
+            widget.Sep(
+                        linewidth = 1,
+                        padding = 10,
+                        foreground = colors[8],
+                        background = colors[8]
+                        ),
+
+#####################################################################################################################
+            widget.TextBox(
+                    text='|-:',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[13],
+                    padding=-2,
+                ),
+
+            widget.TextBox(
+                    text=' ',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[0],
                     padding=-2,
                 ),
 
@@ -279,17 +365,26 @@ widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
                        scale = 0.7
                                  ),
 
-
-##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
             widget.TextBox(
-                    text='|',
+                    text=' ',
+                    fontsize="35",
+                    foreground = colors[14],
+                    background = colors[0],
+                    padding=-2,
+                ),
+
+            widget.TextBox(
+                    text=':-|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[13],
                     padding=-2,
-                ),                    
+                ),
+
 #####################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
+widget.Spacer(background = colors[1],),
+
             widget.Sep(
                         linewidth = 1,
                         padding = 10,
@@ -305,7 +400,7 @@ widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ],
-            27,
+            20,
             margin=[25, 15, 5, 11],
                        ),
 
