@@ -73,7 +73,7 @@ keys = [#-:---------------------------------------------------------------------
 
 
 #####################################################################################################################
-groups = [Group(i) for i in "123456"]
+groups = [Group(i) for i in "1234"]
 
 
 for i in groups:
@@ -103,8 +103,8 @@ layout_theme = {"border_width": 2,
 
 #####################################################################################################################
 layouts = [
-    #layout.Columns(margin=8, border_width=6, border_focus="#3b0633", border_normal="#3b062b"),
-    layout.MonadTall(margin=8, border_width=6, border_focus="#08000d", border_normal="#08000d"),
+    layout.Columns(margin=8, border_width=6, border_focus="#3b0633", border_normal="#3b062b"),
+    #layout.MonadTall(margin=8, border_width=6, border_focus="#08000d", border_normal="#08000d"),
     layout.Max(),
 ]
 #####################################################################################################################
@@ -472,7 +472,7 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
 ###################### top bar settings#### #########################################################################
-            31,
+            25,
             margin=[25, 15, 5, 11],
                        ),
 #####################################################################################################################
