@@ -290,13 +290,13 @@ screens = [    ##### Screen Start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                     padding=-2,
                 ),
 ##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
-            widget.Prompt(
-                       prompt = prompt,
-                       font = "sans",
-                       padding = 10,
-                       foreground = colors[11],
-                       background = colors[13]
-                            ),
+            # widget.Prompt(
+            #            prompt = prompt,
+            #            font = "sans",
+            #            padding = 10,
+            #            foreground = colors[11],
+            #            background = colors[13]
+            #                 ),
 ##:IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII:##
             widget.TextBox(
                     text='|',

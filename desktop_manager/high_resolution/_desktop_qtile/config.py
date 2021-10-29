@@ -730,41 +730,41 @@ bottom=bar.Bar([
 
 ####Prompt############################################################################################################            
 #background color = 6  
-            widget.TextBox(
-                    text=':',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
-           widget.TextBox(
-                    text='|',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
-            widget.Prompt(
-                       prompt = prompt,
-                       font = "sans",
-                       padding = 10,
-                       foreground = colors[11],
-                       background = colors[0]
-                            ),
-           widget.TextBox(
-                    text='|',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
-            widget.TextBox(
-                    text=':',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
+        #     widget.TextBox(
+        #             text=':',
+        #             fontsize="35",
+        #             foreground = colors[14],
+        #             background = colors[0],
+        #             padding=-2,
+        #         ),
+        #    widget.TextBox(
+        #             text='|',
+        #             fontsize="35",
+        #             foreground = colors[14],
+        #             background = colors[0],
+        #             padding=-2,
+        #         ),
+        #     widget.Prompt(
+        #                prompt = prompt,
+        #                font = "sans",
+        #                padding = 10,
+        #                foreground = colors[11],
+        #                background = colors[0]
+        #                     ),
+        #    widget.TextBox(
+        #             text='|',
+        #             fontsize="35",
+        #             foreground = colors[14],
+        #             background = colors[0],
+        #             padding=-2,
+        #         ),
+        #     widget.TextBox(
+        #             text=':',
+        #             fontsize="35",
+        #             foreground = colors[14],
+        #             background = colors[0],
+        #             padding=-2,
+        #         ),
 ######################################################################################################################
 
 
