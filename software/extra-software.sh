@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo pacman -S exfat-utils fuse-exfat a52dec faac faad2 flac jasper lame libdca libdv gst-libav libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore  libdvdcss libdvdread libdvdnav  dvd+rw-tools dvdauthor dvgrab 
-sudo pacman -S xarchiver zip unzip mtpfs gvfs-mtp jshon expac git  htop lxappearance neofetch nitrogen xfce4-terminal qbittorrent
+sudo pacman -S xarchiver zip unzip mtpfs gvfs-mtp jshon expac git  htop lxappearance neofetch nitrogen xfce4-terminal qbittorrent leafpad
 sudo pacman -S variety xfce4-appfinder xfce4-taskmanager thunar rofi scrot vlc ristretto net-tools p7zip unrar gparted conky jdk-openjdk
 
 echo sudo pacman -S amd-ucode or 
