@@ -1,0 +1,24 @@
+
+
+
+pwd
+cd
+ls
+mkdir
+touch
+rm -r
+cp -r
+mv
+
+
+
+
+
+
+
+
+
+
+
+
+mount -o remount,size=4500M /tmp
