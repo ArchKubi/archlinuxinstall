@@ -58,7 +58,7 @@ keys = [#-:---------------------------------------------------------------------
 #-:-------------------------------------------------------------------------:-#
     Key([mod], "a", lazy.spawn("xfce4-appfinder"),             desc="Launch appfinder"),
     Key([mod], "s", lazy.spawn("scrot")),
-    Key([mod], "v", lazy.spawn("vscodium")),
+    Key([mod], "v", lazy.spawn("emacs")),
     Key([mod], "f", lazy.spawn("chromium")),
     Key([mod, "shift"], "s", lazy.spawn("scrot -s")),
     Key([mod, "shift"], "t", lazy.spawn("xfce4-taskmanager")),

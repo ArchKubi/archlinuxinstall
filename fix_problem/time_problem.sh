@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#example "2021-10-05 22:55:00"
-timedatectl set-time "yyyy-MM-dd hh:mm:ss"
+#example "2021-11-10 14:14:00"
+timedatectl set-time "2021-11-10 14:14:00"
 sudo su
 timedatectl set-local-rtc 0
 hwclock --systohc --utc
