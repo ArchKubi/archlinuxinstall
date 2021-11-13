@@ -3,7 +3,7 @@
 
 #cat  ~/.local/share/qtile/qtile.log   #this is eror log
 
-# sudo pacman -S scrot chromium leafpad xfce4-appfinder emacs nitrogen xfce4-taskmanager
+# sudo pacman -S scrot chromium leafpad xfce4-appfinder emacs nitrogen xfce4-taskmanager conky
 
 #############################################
 from typing import List  # noqa: F401
@@ -386,7 +386,7 @@ widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|||-',
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -508,7 +508,7 @@ bottom=bar.Bar([
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|||-',
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -557,7 +557,7 @@ bottom=bar.Bar([
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|||-',
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -613,18 +613,6 @@ bottom=bar.Bar([
                        ),
 ######################################################################################################################
 
-
-##:----------------------------------------------------------------------------------------------------------------:##
-           widget.TextBox(
-                    text='-|||-',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[2],
-                    padding=-2,
-                ),
-##:----------------------------------------------------------------------------------------------------------------:##
-
-
 ####Prompt############################################################################################################            
 #background color = 6  
         #     widget.TextBox(
@@ -667,7 +655,7 @@ bottom=bar.Bar([
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|||-',
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -714,7 +702,7 @@ bottom=bar.Bar([
 
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='-|||-',
+                    text='-|-',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[2],
@@ -816,9 +804,9 @@ floating_layout = layout.Floating(float_rules=[
 def start_once():
     home = os.path.expanduser('~')
     subprocess.call([home + '/.config/qtile/autostart.sh'])
-# def start_once1():
-#     home = os.path.expanduser('~')
-#     subprocess.call([home + '/.config/qtile/display.sh'])
+def start_once1():
+     home = os.path.expanduser('~')
+     subprocess.call([home + '/.config/qtile/display.sh'])
 #####################################################################################################################
 
 #####################################################################################################################
