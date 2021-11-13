@@ -101,7 +101,7 @@ layout_theme = {"border_width": 2,
 
 #####################################################################################################################
 layouts = [
-    layout.Columns(margin=8, border_width=6, border_focus="#08000d", border_normal="#08000d"),
+    layout.Columns(margin=8, border_width=6, border_focus="#08000d", border_normal="#a8a8a8"),
     #layout.MonadTall(margin=8, border_width=6, border_focus="#910c67", border_normal="#6e0d5b"),
     layout.Max(),
 ]
