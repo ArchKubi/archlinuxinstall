@@ -11,7 +11,7 @@ echo "timedatectl "
 
 
 ################################################################################################################
-read -rsn1 -p "##### HARDDISK OLUSTUR #############################################" variable; echo
+read -rsn1 -p "##### HARDDİSK OLUŞTUR #############################################" variable; echo
 echo "dont forget 1:swap 2:boot 3:harddisk(system) "
 cfdisk 
 mkswap /dev/sda1
@@ -25,11 +25,7 @@ mkdir /mnt/boot
 mount /dev/sda2 /mnt/boot
 echo -n "harddisk bitti "
 read -rsn1 -p "//Press Enter" variable; echo
-read -rsn1 -p "######################Bitti:/Press-Enter#########################" variable; echo
-################################################################################################################
-
-
-
+read -rsn1 -p "######################bitti:/Press-Enter#########################" variable; echo
 ################################################################################################################
 read -rsn1 -p "##### EKSTRA AYARLAR #############################################" variable; echo
 pacstrap -i /mnt base base-devel linux linux-zen nano linux-firmware
@@ -37,15 +33,11 @@ pacstrap /mnt grub os-prober
 echo -n "pacstrap finish "
 read -rsn1 -p "//Press Enter" variable; echo
 genfstab -p /mnt >> /mnt/etc/fstab
-read -rsn1 -p "######################Bitti:/Press-Enter#########################" variable; echo
+read -rsn1 -p "######################bitti:/Press-Enter#########################" variable; echo
 ################################################################################################################
-
-
-
-################################################################################################################
-read -rsn1 -p "######PART2 COPY FILE############################################" variable; echo
+read -rsn1 -p "######PART2 COPY FİLE############################################" variable; echo
 cp part2.sh /mnt
 arch-chroot /mnt
 echo"öncelik part1.sh bitti terminale sh part2.sh yaz //Press Enter" variable; echo
-read -rsn1 -p "######################Bitti:/Press-Enter#########################" variable; echo
+read -rsn1 -p "######################bitti:/Press-Enter#########################" variable; echo
 ################################################################################################################
