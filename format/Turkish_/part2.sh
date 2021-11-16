@@ -51,7 +51,7 @@ read -rsn1 -p "######YEREL ZAMAN################################################
 read -rsn1 -p "Turkiye Zaman Dilimi  //Press Enter" variable; echo
 timedatectl set-timezone Europe/Istanbul
 read -rsn1 -p "$timezone tamamlandi! //Press Enter" variable; echo
-locale-gen en_US.UTF-8
+locale-gen tr_TR.UTF-8
 read -rsn1 -p "######################Bitti:/Press-Enter#########################" variable; echo
 ################################################################################################################
 

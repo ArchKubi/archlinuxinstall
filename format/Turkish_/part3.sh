@@ -94,7 +94,7 @@ do
 
 
         "Xfce")
-        echo "Seçtiğin OrtamXfce"
+        echo "Seçtiğin Ortam Xfce"
             sudo pacman -S xfce4 xfce4-goodies
             break
             ;;
