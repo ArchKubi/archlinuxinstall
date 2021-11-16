@@ -17,10 +17,10 @@ echo   "root ALL=(ALL) ALL # this is root "
 echo   "yourUserName ALL=(ALL) ALL <--- add this line"
 echo   "##"
 echo   "##"
-read -rsn1 -p "kullanıcı olustur Tamamlandı!   //Press Enter" variable; echo
+read -rsn1 -p "kullanici olustur Tamamlandi!   //Press Enter" variable; echo
 
 nano /etc/sudoers
-read -rsn1 -p "Kullanıcı olustur Tamamlandı!     //Press Enter" variable; echo
+read -rsn1 -p "Kullanici olustur Tamamlandi!     //Press Enter" variable; echo
 ################################################################################################################
 
 
@@ -28,11 +28,11 @@ read -rsn1 -p "Kullanıcı olustur Tamamlandı!     //Press Enter" variable; ech
 ################################################################################################################
 read -rsn1 -p "#########SES SuRuCuSu############################################" variable; echo
 pacman -S alsa alsa-utils alsa-plugins
-read -rsn1 -p "alsa Tamamlandı!    //Press Enter" variable; echo
+read -rsn1 -p "alsa Tamamlandi!    //Press Enter" variable; echo
 
 pacman -S pulseaudio pavucontrol
-echo "pulseaudio Tamamlandı!    " variable; echo
-read -rsn1 -p "######################Bitir:/Enter-Basın#########################" variable; echo
+echo "pulseaudio Tamamlandi!    " variable; echo
+read -rsn1 -p "######################Bitir:/Enter-Basin#########################" variable; echo
 ################################################################################################################
 
 
@@ -40,8 +40,8 @@ read -rsn1 -p "######################Bitir:/Enter-Basın########################
 ################################################################################################################
 read -rsn1 -p "##########GRAFİK SuRuCuSu#########################################" variable; echo
 pacman -S xorg xorg-server xorg-xinit xorg-apps
-echo "xorg Tamamlandı!    "
-read -rsn1 -p "######################Bitir:/Enter-Basın#########################" variable; echo
+echo "xorg Tamamlandi!    "
+read -rsn1 -p "######################Bitir:/Enter-Basin#########################" variable; echo
 ################################################################################################################
 
 
@@ -49,9 +49,9 @@ read -rsn1 -p "######################Bitir:/Enter-Basın########################
 read -rsn1 -p "#####GİRİŞ EKRANI################################################" variable; echo
 sudo pacman -S lightdm lightdm-webkit2-greeter wget lightdm-gtk-greeter
 systemctl enable lightdm.service
-read -rsn1 -p "######################Bitir:/Enter-Basın#########################" variable; echo
+read -rsn1 -p "######################Bitir:/Enter-Basin#########################" variable; echo
 
-echo "LightDM Tamamlandı!    "
+echo "LightDM Tamamlandi!    "
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
 
@@ -66,7 +66,7 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 
 ################################################################################################################
 read -rsn1 -p "########Gui selection############################################" variable; echo
-echo "lutfen bırakmayı unutma"
+echo "lutfen birakmayi unutma"
 PS3='Lutfen seçiminizi girin: '
 
 
@@ -125,7 +125,7 @@ do
             ;;
     esac
 done
-read -rsn1 -p "######################Bitir:/Enter-Basın#########################" variable; echo
+read -rsn1 -p "######################Bitir:/Enter-Basin#########################" variable; echo
 ################################################################################################################
 
 
@@ -135,7 +135,7 @@ read -rsn1 -p "##########END BOOT###############################################
 echo -n "bilgisayar simdi yeniden baslat hosçakal  "
 read -rsn1 -p "bunu unutma //Press Enter" variable; echo
 reboot
-read -rsn1 -p "######################Bitir:/Enter-Basın#########################" variable; echo
+read -rsn1 -p "######################Bitir:/Enter-Basin#########################" variable; echo
 ################################################################################################################
 
 
