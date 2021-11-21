@@ -52,7 +52,8 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 read -rsn1 -p "######LOCAL TIME #################################################" variable; echo
 read -rsn1 -p "Turkey Time Zone  //Press Enter" variable; echo
-timedatectl set-timezone Europe/Istanbul
+timedatectl set-timezone Europe/Istanbul 
+timedatectl set-local-rtc 1
 read -rsn1 -p "$timezone Completed! //Press Enter" variable; echo
 locale-gen en_US.UTF-8
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
