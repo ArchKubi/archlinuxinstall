@@ -329,7 +329,7 @@ widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
             widget.Clock(
                        foreground = colors[3],
                        background = colors[0],
-                       format = "%A, %B %d - %H:%M "
+                       format = "%H:%M "
                             ),
 
             widget.TextBox(
