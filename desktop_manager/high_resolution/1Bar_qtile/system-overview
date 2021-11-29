@@ -145,7 +145,7 @@ ${color1}${hr}${color}
 ####################################################
 ${color1}[S]+Enter${alignr}${color2}Terminal${color}
 ${color1}[S]+[Shift]+Enter${alignr}${color2}File Manager${color}
-${color1}[Ctrl]+F${alignr}${color2}Chromium${color}
+${color1}[Ctrl]+F${alignr}${color2}Firefox${color}
 ${color1}[S]+V${alignr}${color2}VSCodium${color}
 ${color1}[S]+G${alignr}${color2}Gitkraken${color}
 ${color1}[S]+[Shift]+T${alignr}${color2}Task Manager${color}
