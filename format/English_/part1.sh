@@ -1,6 +1,31 @@
 #!/bin/bash
 
-
+#################################################################
+#                    -`
+#                   .o+`                   ------------------ 
+#                  `ooo/                   OS: Arch Linux x86_64 
+#                 `+oooo:                  Kernel: 5.15.5-zen1-1-zen 
+#                `+oooooo:                 Packages: 1250 (pacman) 
+#                -+oooooo+:                Shell: bash 5.1.12 
+#              `/:-:++oooo+:               DE: qtile 
+#             `/++++/+++++++:              WM: LG3D 
+#            `/++++++++++++++:
+#           `/+++ooooooooooooo/`           
+#          ./ooosssso++osssssso+`          
+#         .oossssso-````/ossssss+`
+#        -osssssso.      :ssssssso.
+#       :osssssss/        osssso+++.
+#      /ossssssss/        +ssssooo/-
+#    `/ossssso+/:-        -:/+osssso+- 
+#   `+sso+:-`                 `.-/+oso:
+#  `++:.                           `-/+/
+#  .`                                 `/
+#                                                                
+#                                           
+# Please do not forget this is just  beginner script yes I'am beginner to
+#   if you problem please give a feedback
+#
+#################################################################
 
 
 #################################################################
