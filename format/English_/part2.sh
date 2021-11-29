@@ -63,7 +63,7 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 
 
 ################################################################################################################
-read -rsn1 -p "#SON AYARLAR####################################################" variable; echo
+read -rsn1 -p "#Last Settings####################################################" variable; echo
 mkinitcpio -p linux
 read -rsn1 -p "mkinitcpio Completed! //Press Enter" variable; echo
 grub-install --recheck /dev/sda

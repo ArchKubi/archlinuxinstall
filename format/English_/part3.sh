@@ -33,7 +33,7 @@ read -rsn1 -p "alsa Completed!    //Press Enter" variable; echo
 
 pacman -S pulseaudio pavucontrol
 echo "pulseaudio Completed!   " variable; echo
-read -rsn1 -p "######################Finish:/Enter-Basın#########################" variable; echo
+read -rsn1 -p "######################Finish:/Press Enter#########################" variable; echo
 ################################################################################################################
 
 
@@ -43,7 +43,7 @@ read -rsn1 -p "######################Finish:/Enter-Basın#######################
 read -rsn1 -p "##########GRAFİK SÜRÜCÜSÜ#########################################" variable; echo
 pacman -S xorg xorg-server xorg-xinit xorg-apps
 echo "xorg Completed!   "
-read -rsn1 -p "######################Bitir:/Enter-Basın#########################" variable; echo
+read -rsn1 -p "######################Bitir:/Press Enter#########################" variable; echo
 ################################################################################################################
 
 
@@ -53,10 +53,10 @@ read -rsn1 -p "######################Bitir:/Enter-Basın########################
 read -rsn1 -p "#####GİRİŞ EKRANI################################################" variable; echo
 sudo pacman -S lightdm lightdm-webkit2-greeter wget lightdm-gtk-greeter
 systemctl enable lightdm.service
-read -rsn1 -p "######################Bitir:/Enter-Basın#########################" variable; echo
+read -rsn1 -p "######################Bitir:/Press Enter#########################" variable; echo
 
 echo "LightDM Completed!    "
-read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
+read -rsn1 -p "######################Finish:/Press Enter#########################" variable; echo
 ################################################################################################################
 
 
@@ -64,7 +64,7 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 read -rsn1 -p "#######::TERMİNAL::##############################################" variable; echo
 pacman -S xterm
-read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
+read -rsn1 -p "######################Finish:/Press Enter#########################" variable; echo
 ################################################################################################################
 
 
@@ -131,7 +131,7 @@ do
             ;;
     esac
 done
-read -rsn1 -p "######################Finish:/Enter-Basın#########################" variable; echo
+read -rsn1 -p "######################Finish:/Press Enter#########################" variable; echo
 ################################################################################################################
 
 
@@ -142,7 +142,7 @@ read -rsn1 -p "##########END BOOT###############################################
 echo -n "computer restart now bye  "
 read -rsn1 -p "//Press Enter" variable; echo
 reboot
-read -rsn1 -p "######################Finish:/Enter-Basın#########################" variable; echo
+read -rsn1 -p "######################Finish:/Press Enter#########################" variable; echo
 ################################################################################################################
 
 
