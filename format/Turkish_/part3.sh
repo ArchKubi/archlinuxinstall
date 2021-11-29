@@ -26,7 +26,7 @@ read -rsn1 -p "Kullanici olustur Tamamlandi!     //Press Enter" variable; echo
 
 
 ################################################################################################################
-read -rsn1 -p "#########SES SuRuCuSu############################################" variable; echo
+read -rsn1 -p "######### SES SuRuCuSu ############################################" variable; echo
 pacman -S alsa alsa-utils alsa-plugins
 read -rsn1 -p "alsa Tamamlandi!    //Press Enter" variable; echo
 
@@ -38,7 +38,7 @@ read -rsn1 -p "######################Bitir:/Enter-Basin#########################
 
 
 ################################################################################################################
-read -rsn1 -p "##########GRAFİK SuRuCuSu#########################################" variable; echo
+read -rsn1 -p "########## GRAFIK SuRuCuSu #########################################" variable; echo
 pacman -S xorg xorg-server xorg-xinit xorg-apps
 echo "xorg Tamamlandi!    "
 read -rsn1 -p "######################Bitir:/Enter-Basin#########################" variable; echo
@@ -46,7 +46,7 @@ read -rsn1 -p "######################Bitir:/Enter-Basin#########################
 
 
 ################################################################################################################
-read -rsn1 -p "#####GİRİŞ EKRANI################################################" variable; echo
+read -rsn1 -p "##### GIRIS EKRANI ################################################" variable; echo
 sudo pacman -S lightdm lightdm-webkit2-greeter wget lightdm-gtk-greeter
 systemctl enable lightdm.service
 read -rsn1 -p "######################Bitir:/Enter-Basin#########################" variable; echo
@@ -57,7 +57,7 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 
 
 ################################################################################################################
-read -rsn1 -p "#######::TERMİNAL::##############################################" variable; echo
+read -rsn1 -p "####### TERMİNAL ##############################################" variable; echo
 pacman -S xterm
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
@@ -65,8 +65,7 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 
 
 ################################################################################################################
-read -rsn1 -p "########Gui selection############################################" variable; echo
-echo "lutfen birakmayi unutma"
+read -rsn1 -p "######## Gui selection ############################################" variable; echo
 PS3='Lutfen seçiminizi girin: '
 
 
@@ -131,7 +130,7 @@ read -rsn1 -p "######################Bitir:/Enter-Basin#########################
 
 
 ################################################################################################################
-read -rsn1 -p "##########END BOOT###############################################" variable; echo
+read -rsn1 -p "########## END BOOT ###############################################" variable; echo
 echo -n "bilgisayar simdi yeniden baslat hosçakal  "
 read -rsn1 -p "bunu unutma //Press Enter" variable; echo
 reboot

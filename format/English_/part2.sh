@@ -3,7 +3,7 @@
 
 
 ################################################################################################################
-read -rsn1 -p "######NETWORK MANAGER #############################################" variable; echo
+read -rsn1 -p "###### NETWORK MANAGER #############################################" variable; echo
 pacman -S networkmanager
 systemctl enable NetworkManager.service
 echo -n "enabled network manager  "
@@ -24,6 +24,8 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 
 
+
+
 ################################################################################################################
 read -rsn1 -p "###### Root Password ##############################################" variable; echo
 read -rsn1 -p "You type root password, when login you will enter root and password, of course you know that .//Press Enter" variable; echo
@@ -35,13 +37,16 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 
 
 ################################################################################################################
-read -rsn1 -p "######SYSTEM LANGUAGE ############################################" variable; echo
+read -rsn1 -p "###### SYSTEM LANGUAGE ############################################" variable; echo
 #---------------------------------------------------------------#
-read -rsn1 -p "dont forget edit this --> part2.sh : Enlish Language = en_US.UTF-8 //Press Enter" variable; echo
+read -rsn1 -p "dont forget edit this --> part2.sh : English Language = en_US.UTF-8 //Press Enter" variable; echo
 echo "LC_ALL=en_US.UTF-8" >> /etc/environment
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
-echo KEYMAP=trq >> /etc/vconsole.conf 
+
+read -p "Enter Keymap |KEYMAP=trq|---|KEYMAP=us| enter like this: " keymaP
+echo keymaP >> /etc/vconsole.conf 
+
 echo "Your language is OK!  //Press Enter" variable; echo
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
