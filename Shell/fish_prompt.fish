@@ -55,13 +55,15 @@ function __ruby_version
 end
 
 function fish_prompt
-  echo -n (set_color white)"╭─"(set_color normal)
+  echo -n (set_color white)"(╭─"(set_color normal)
   __user_host
   __current_path
   __ruby_version
   __git_status
-  echo -e ''
-  echo (set_color white)"╰─"(set_color --bold white)"|<:GnuChanOS:>| "(set_color normal)
+  echo -e ')'
+  echo (set_color white)"(|-----|Life is GnuChan|-----"(set_color --bold white)")"(set_color normal)
+  echo (set_color white)"(|-----|"(set_color --bold white)"<:GnuChanOs:>|-------)"(set_color normal)
+  echo (set_color white)"(╰─"(set_color --bold white)" What You Need?-----------)  :"(set_color normal)
 end
 
 function fish_right_prompt
