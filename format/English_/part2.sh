@@ -4,8 +4,10 @@
 
 ################################################################################################################
 read -rsn1 -p "###### NETWORK MANAGER #############################################" variable; echo
+
 pacman -S networkmanager
 systemctl enable NetworkManager.service
+
 echo -n "enabled network manager  "
 read -rsn1 -p "//Press Enter" variable; echo
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
@@ -17,8 +19,10 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 read -rsn1 -p "###### COMPUTER NAME ##############################################" variable; echo
 echo "this is your computer name "
+
 read -p 'Enter Computer Name : ' computer_name
 echo "$computer_name" >> /etc/hostname
+
 read -rsn1 -p "$computer_name nice name bro  //Press Enter" variable; echo
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
@@ -57,8 +61,10 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 read -rsn1 -p "###### LOCAL TIME #################################################" variable; echo
 read -rsn1 -p "Turkey Time Zone  //Press Enter" variable; echo
+
 timedatectl set-timezone Europe/Istanbul 
 timedatectl set-local-rtc 1
+
 read -rsn1 -p "$timezone Completed! //Press Enter" variable; echo
 locale-gen en_US.UTF-8
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
@@ -71,9 +77,11 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 read -rsn1 -p "# Last Settings ####################################################" variable; echo
 mkinitcpio -p linux
+
 read -rsn1 -p "mkinitcpio Completed! //Press Enter" variable; echo
 grub-install --recheck /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
+
 echo -n "grub-install ve grub-mkconfig "
 read -rsn1 -p "//Press Enter" variable; echo
 echo "first enter this command 1: exit 2: umount /mnt/boot and umount /mnt "
