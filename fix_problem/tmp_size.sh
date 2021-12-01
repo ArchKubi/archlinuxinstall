@@ -1,1 +1,1 @@
-mount -o remount,size=8G /tmp/    #change size
+sudo mount -o remount,size=8G /tmp/    #change size
