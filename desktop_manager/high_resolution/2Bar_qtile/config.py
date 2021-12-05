@@ -58,7 +58,8 @@ keys = [#-:---------------------------------------------------------------------
 #-:-------------------------------------------------------------------------:-#
     Key([mod], "a", lazy.spawn("xfce4-appfinder"),             desc="Launch appfinder"),
     Key([mod], "s", lazy.spawn("scrot")),
-    Key([mod], "v", lazy.spawn("emacs")),
+    Key([mod], "e", lazy.spawn("emacs")),
+    Key([mod], "v", lazy.spawn("vscodium")),
     Key([mod], "f", lazy.spawn("firefox")),
     Key([mod, "shift"], "s", lazy.spawn("scrot -s")),
     Key([mod, "shift"], "t", lazy.spawn("xfce4-taskmanager")),
@@ -368,7 +369,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                 ),
 widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
            widget.TextBox(
-                    text='------( Life is Gnu/Linux but More GNU )------',
+                    text='--( Life is Gnu/Linux but More GNU )--',
                     fontsize="20",
                     foreground = colors[3],
                     background = colors[0],

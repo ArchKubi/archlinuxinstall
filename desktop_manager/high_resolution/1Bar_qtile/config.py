@@ -58,12 +58,13 @@ keys = [#-:---------------------------------------------------------------------
 #-:-------------------------------------------------------------------------:-#
     Key([mod], "a", lazy.spawn("xfce4-appfinder"),             desc="Launch appfinder"),
     Key([mod], "s", lazy.spawn("scrot")),
-    Key([mod], "v", lazy.spawn("emacs")),
+    Key([mod], "e", lazy.spawn("emacs")),
+    Key([mod], "v", lazy.spawn("vscodium")),
     Key([mod], "f", lazy.spawn("firefox")),
     Key([mod, "shift"], "s", lazy.spawn("scrot -s")),
     Key([mod, "shift"], "t", lazy.spawn("xfce4-taskmanager")),
     Key([mod, "shift"], "z", lazy.spawn("lxappearance")),
-    Key([mod], "g", lazy.spawn("gitkraken")),
+    Key([mod], "g", lazy.spawn("github-desktop")),
     Key([mod], "l", lazy.spawn("leafpad")),
     Key([mod], "p", lazy.spawn("pavucontrol")),
 

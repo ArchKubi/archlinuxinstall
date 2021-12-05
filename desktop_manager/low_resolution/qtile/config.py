@@ -58,12 +58,13 @@ keys = [#-:---------------------------------------------------------------------
 #-:-------------------------------------------------------------------------:-#
     Key([mod], "a", lazy.spawn("xfce4-appfinder"),             desc="Launch appfinder"),
     Key([mod], "s", lazy.spawn("scrot")),
-    Key([mod], "v", lazy.spawn("emacs")),
+    Key([mod], "e", lazy.spawn("emacs")),
+    Key([mod], "v", lazy.spawn("vscodium")),
     Key([mod], "f", lazy.spawn("firefox")),
     Key([mod, "shift"], "s", lazy.spawn("scrot -s")),
     Key([mod, "shift"], "t", lazy.spawn("xfce4-taskmanager")),
     Key([mod, "shift"], "z", lazy.spawn("lxappearance")),
-    Key([mod], "g", lazy.spawn("gitkraken")),
+    Key([mod], "g", lazy.spawn("github-desktop")),
     Key([mod], "l", lazy.spawn("leafpad")),
     Key([mod], "p", lazy.spawn("pavucontrol")),
 
@@ -347,47 +348,6 @@ widget.Image(filename="~/.config/qtile/img/gnu.png",background = colors[0],),
                         foreground = colors[8],
                         background = colors[8]
                         ),
-
-#####################################################################################################################
-            widget.TextBox(
-                    text='|-:',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[13],
-                    padding=-2,
-                ),
-
-            widget.TextBox(
-                    text=' ',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
-
-            widget.QuickExit(
-                       foreground = colors[3],
-                       background = colors[0],
-                       padding = 0,
-                       scale = 0.7
-                                 ),
-
-            widget.TextBox(
-                    text=' ',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
-
-            widget.TextBox(
-                    text=':-|',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[13],
-                    padding=-2,
-                ),
-
 #####################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
 widget.Spacer(background = colors[1],),
@@ -407,7 +367,7 @@ widget.Spacer(background = colors[1],),
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ],
-            25,
+            35,
             margin=[10, 20, 5, 11],
                        ),
 

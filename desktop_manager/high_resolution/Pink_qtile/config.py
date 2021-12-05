@@ -59,12 +59,13 @@ keys = [
 #-:-------------------------------------------------------------------------:-#
     Key([mod], "a", lazy.spawn("xfce4-appfinder"),             desc="Launch appfinder"),
     Key([mod], "s", lazy.spawn("scrot")),
-    Key([mod], "v", lazy.spawn("emacs")),
-    Key([mod], "f", lazy.spawn("chromium")),
+    Key([mod], "e", lazy.spawn("emacs")),
+    Key([mod], "v", lazy.spawn("vscodium")),
+    Key([mod], "f", lazy.spawn("firefox")),
     Key([mod, "shift"], "s", lazy.spawn("scrot -s")),
     Key([mod, "shift"], "t", lazy.spawn("xfce4-taskmanager")),
     Key([mod, "shift"], "z", lazy.spawn("lxappearance")),
-    Key([mod], "g", lazy.spawn("gitkraken")),
+    Key([mod], "g", lazy.spawn("github-desktop")),
     Key([mod], "l", lazy.spawn("leafpad")),
     Key([mod], "p", lazy.spawn("pavucontrol")),
 
@@ -75,7 +76,7 @@ keys = [
 
 
 #####################################################################################################################
-groups = [Group(i) for i in "123456"]
+groups = [Group(i) for i in "1234"]
 
 for i in groups:
     keys.extend([
@@ -223,7 +224,7 @@ screens = [
 
 #####################################################################################################################
             widget.TextBox(
-                    text='{~|',
+                    text='~|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[1],
@@ -360,7 +361,7 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     padding=-2,
                 ),
            widget.TextBox(
-                    text='-----------------( Life is Gnu/Linux but More GNU )------------------',
+                    text='--( Life is Gnu/Linux but More GNU )--',
                     fontsize="20",
                     foreground = colors[3],
                     background = colors[0],
@@ -454,50 +455,12 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 ##:----------------------------------------------------------------------------------------------------------------:##
 
 
-####QuickExit#########################################################################################################
-           widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
-            widget.TextBox(
-                    text=':',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
-            widget.QuickExit(
-                       foreground = colors[3],
-                       background = colors[0],
-                       padding = 0,
-                       scale = 0.7
-                                 ),
-            widget.TextBox(
-                    text=':',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),   
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),                  
-######################################################################################################################
-
-##:----------------------------------------------------------------------------------------------------------------:##
 ######################################################################################################################
 widget.Spacer(background = colors[1],),
 ######################################################################################################################
 
             widget.TextBox(
-                    text='|~}',
+                    text='|~',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[1],
@@ -505,7 +468,7 @@ widget.Spacer(background = colors[1],),
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 ],
-30),
+35),
 #####################################################################################################################
 
 
@@ -528,7 +491,7 @@ bottom=bar.Bar([
 #####################################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
             widget.TextBox(
-                    text='{~|',
+                    text='~|',
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[1],
@@ -884,14 +847,14 @@ bottom=bar.Bar([
                     padding=-2,
                 ),
             widget.TextBox(
-                    text='|~}',
-                    fontsize="35",
+                    text='|~',
+                    fontsize="25",
                     foreground = colors[14],
                     background = colors[1],
                     padding=-2,
                 ),
 ######################################################################################################################
-], 30),left=bar.Gap(1),right=bar.Gap(1), )]
+], 35),left=bar.Gap(1),right=bar.Gap(1), )]
 ############################# Screen Ending XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
