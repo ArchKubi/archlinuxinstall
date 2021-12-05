@@ -2,6 +2,7 @@
 #chmod +x ~/.config/qtile/autostart.sh
 
 #cat  ~/.local/share/qtile/qtile.log   #this is eror log
+#change color palette
 
 #############################################
 from typing import List  # noqa: F401
@@ -227,7 +228,7 @@ screens = [
                     text='~|',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 ######################################################################################################################
@@ -239,17 +240,17 @@ widget.Spacer(background = colors[1],),
 ####Gnu/ArchLinux#####################################################################################################
 #background color = 0
             widget.TextBox(
-                    text='(',
-                    fontsize="35",
+                    text='{',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ), 
             widget.TextBox(
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
 widget.Image(filename="~/.config/qtile/img/ram.png",background = colors[0],),
@@ -259,14 +260,14 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.TextBox(
-                    text=')',
-                    fontsize="35",
+                    text='}',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),  
 #####################################################################################################################
@@ -274,10 +275,10 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 
 ##:----------------------------------------------------------------------------------------------------------------:##
             widget.TextBox(
-                    text='-',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -286,17 +287,17 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 ####GroupBox##########################################################################################################
 #background color = 10
             widget.TextBox(
-                    text='(',
-                    fontsize="35",
+                    text='{',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ), 
             widget.TextBox(
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.GroupBox(                
@@ -321,14 +322,14 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.TextBox(
-                    text=')',
-                    fontsize="35",
+                    text='}',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ), 
 ######################################################################################################################
@@ -336,10 +337,10 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 
 ##:----------------------------------------------------------------------------------------------------------------:##
             widget.TextBox(
-                    text='-',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -347,17 +348,17 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 
 ####WindowName########################################################################################################            
             widget.TextBox(
-                    text='(',
-                    fontsize="35",
+                    text='{',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ), 
            widget.TextBox(
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
            widget.TextBox(
@@ -371,14 +372,14 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.TextBox(
-                    text=')',
-                    fontsize="35",
+                    text='}',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),                 
 ######################################################################################################################            
@@ -386,10 +387,10 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 
 ##:----------------------------------------------------------------------------------------------------------------:##
             widget.TextBox(
-                    text='-',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -409,17 +410,17 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 ####Clock#############################################################################################################
 ##:----------------------------------------------------------------------------------------------------------------:##
            widget.TextBox(
-                    text='(',
-                    fontsize="35",
+                    text='{',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ), 
            widget.TextBox(
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.Clock(
@@ -431,14 +432,14 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.TextBox(
-                    text=')',
-                    fontsize="35",
+                    text='}',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),     
 ######################################################################################################################
@@ -446,10 +447,10 @@ widget.Image(filename="~/.config/qtile/img/rem.png",background = colors[0],),
 
 ##:----------------------------------------------------------------------------------------------------------------:##
             widget.TextBox(
-                    text='-',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -463,7 +464,7 @@ widget.Spacer(background = colors[1],),
                     text='|~',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -494,14 +495,7 @@ bottom=bar.Bar([
                     text='~|',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),
-            widget.TextBox(
-                    text='-',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -509,17 +503,17 @@ bottom=bar.Bar([
 
 ####CurrentLayout#####################################################################################################
             widget.TextBox(
-                    text='(',
-                    fontsize="35",
+                    text='{',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ), 
             widget.TextBox(
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),               
             widget.CurrentLayout(
@@ -532,14 +526,14 @@ bottom=bar.Bar([
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.TextBox(
-                    text=')',
-                    fontsize="35",
+                    text='}',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ), 
 ######################################################################################################################
@@ -547,10 +541,10 @@ bottom=bar.Bar([
 
 ##:----------------------------------------------------------------------------------------------------------------:##
             widget.TextBox(
-                    text='-',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -558,17 +552,17 @@ bottom=bar.Bar([
 
 #####pulsevolume######################################################################################################
            widget.TextBox(
-                    text='(',
-                    fontsize="35",
+                    text='{',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),  
            widget.TextBox(
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.PulseVolume(
@@ -583,109 +577,109 @@ bottom=bar.Bar([
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.TextBox(
-                    text=')',
-                    fontsize="35",
+                    text='}',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ), 
 ######################################################################################################################
 
 
 ##:----------------------------------------------------------------------------------------------------------------:##
-            widget.TextBox(
-                    text='-',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),
+            # widget.TextBox(
+            #         text='|',
+            #         fontsize="35",
+            #         foreground = colors[14],
+            #         background = colors[7],
+            #         padding=-2,
+            #     ),
 ##:----------------------------------------------------------------------------------------------------------------:##
 
 
 ####Thermalsensor,cpu,memory##########################################################################################
-            widget.TextBox(
-                    text='(',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),  
-           widget.TextBox(
-                    text=':',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
-            widget.ThermalSensor(
-                      foreground = colors[3],
-                      foreground_alert = colors[6],
-                      background = colors[0],
-                      metric = True,
-                      padding = 3,
-                      threshold = 80
-                      ),
+        #     widget.TextBox(
+        #             text='{',
+        #             fontsize="35",
+        #             foreground = colors[14],
+        #             background = colors[1],
+        #             padding=-2,
+        #         ),  
+        #    widget.TextBox(
+        #             text=':',
+        #             fontsize="35",
+        #             foreground = colors[14],
+        #             background = colors[0],
+        #             padding=-2,
+        #         ),
+        #     widget.ThermalSensor(
+        #               foreground = colors[3],
+        #               foreground_alert = colors[6],
+        #               background = colors[0],
+        #               metric = True,
+        #               padding = 3,
+        #               threshold = 80
+        #               ),
 
-           widget.TextBox(
-                    text='|',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
-
-
-            widget.CPU(
-                      foreground = colors[3],
-                      background = colors[0],
-                      ),
-
-           widget.TextBox(
-                    text='|',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
+        #    widget.TextBox(
+        #             text='|',
+        #             fontsize="35",
+        #             foreground = colors[14],
+        #             background = colors[0],
+        #             padding=-2,
+        #         ),
 
 
-            widget.Memory(
-                     font="Noto Sans",
-                      #format = '{MemUsed}M/{MemTotal}M',
-                      update_interval = 1,
-                      fontsize = 12,
-                      foreground = colors[3],
-                      background = colors[0],
-                     ),
+        #     widget.CPU(
+        #               foreground = colors[3],
+        #               background = colors[0],
+        #               ),
+
+        #    widget.TextBox(
+        #             text='|',
+        #             fontsize="35",
+        #             foreground = colors[14],
+        #             background = colors[0],
+        #             padding=-2,
+        #         ),
+
+
+        #     widget.Memory(
+        #              font="Noto Sans",
+        #               #format = '{MemUsed}M/{MemTotal}M',
+        #               update_interval = 1,
+        #               fontsize = 12,
+        #               foreground = colors[3],
+        #               background = colors[0],
+        #              ),
                
-           widget.TextBox(
-                    text=':',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[0],
-                    padding=-2,
-                ),
-            widget.TextBox(
-                    text=')',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ), 
+        #    widget.TextBox(
+        #             text=':',
+        #             fontsize="35",
+        #             foreground = colors[14],
+        #             background = colors[0],
+        #             padding=-2,
+        #         ),
+        #     widget.TextBox(
+        #             text='}',
+        #             fontsize="35",
+        #             foreground = colors[14],
+        #             background = colors[1],
+        #             padding=-2,
+        #         ), 
 ######################################################################################################################
 
 
 ##:----------------------------------------------------------------------------------------------------------------:##
             widget.TextBox(
-                    text='-',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -693,50 +687,50 @@ bottom=bar.Bar([
 
 ####Prompt############################################################################################################            
 #background color = 6  
-        #     widget.TextBox(
-        #             text=':',
-        #             fontsize="35",
-        #             foreground = colors[14],
-        #             background = colors[0],
-        #             padding=-2,
-        #         ),
-        #    widget.TextBox(
-        #             text='|',
-        #             fontsize="35",
-        #             foreground = colors[14],
-        #             background = colors[0],
-        #             padding=-2,
-        #         ),
-        #     widget.Prompt(
-        #                prompt = prompt,
-        #                font = "sans",
-        #                padding = 10,
-        #                foreground = colors[11],
-        #                background = colors[0]
-        #                     ),
-        #    widget.TextBox(
-        #             text='|',
-        #             fontsize="35",
-        #             foreground = colors[14],
-        #             background = colors[0],
-        #             padding=-2,
-        #         ),
-        #     widget.TextBox(
-        #             text=':',
-        #             fontsize="35",
-        #             foreground = colors[14],
-        #             background = colors[0],
-        #             padding=-2,
-        #         ),
+             widget.TextBox(
+                     text=':',
+                     fontsize="35",
+                     foreground = colors[14],
+                     background = colors[7],
+                     padding=-2,
+                 ),
+            widget.TextBox(
+                     text='|',
+                     fontsize="35",
+                     foreground = colors[14],
+                     background = colors[7],
+                     padding=-2,
+                 ),
+             widget.Prompt(
+                        prompt = prompt,
+                        font = "sans",
+                        padding = 10,
+                        foreground = colors[11],
+                        background = colors[0]
+                             ),
+            widget.TextBox(
+                     text='|',
+                     fontsize="35",
+                     foreground = colors[14],
+                     background = colors[7],
+                     padding=-2,
+                 ),
+             widget.TextBox(
+                     text=':',
+                     fontsize="35",
+                     foreground = colors[14],
+                     background = colors[7],
+                     padding=-2,
+                 ),
 ######################################################################################################################
 
 
 ##:----------------------------------------------------------------------------------------------------------------:##
             widget.TextBox(
-                    text='-',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -744,10 +738,10 @@ bottom=bar.Bar([
 
 ####WindowName########################################################################################################
             widget.TextBox(
-                    text='(',
-                    fontsize="35",
+                    text='{',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ), 
 
@@ -755,7 +749,7 @@ bottom=bar.Bar([
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.WindowName(
@@ -767,14 +761,14 @@ bottom=bar.Bar([
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.TextBox(
-                    text=')',
-                    fontsize="35",
+                    text='}',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 #####################################################################################################################
@@ -782,10 +776,10 @@ bottom=bar.Bar([
 
 ##:----------------------------------------------------------------------------------------------------------------:##
             widget.TextBox(
-                    text='-',
+                    text='|',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 ##:----------------------------------------------------------------------------------------------------------------:##
@@ -793,24 +787,24 @@ bottom=bar.Bar([
 
 ####Systray show system background program############################################################################
             widget.TextBox(
-                    text='(',
-                    fontsize="35",
+                    text='{',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ), 
             widget.TextBox(
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
            widget.TextBox(
                     text='|',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.Systray(
@@ -821,36 +815,29 @@ bottom=bar.Bar([
                     text='|',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.TextBox(
                     text=':',
                     fontsize="35",
                     foreground = colors[14],
-                    background = colors[0],
+                    background = colors[7],
                     padding=-2,
                 ),
             widget.TextBox(
-                    text=')',
-                    fontsize="35",
+                    text='}',
+                    fontsize="27",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ), 
 ######################################################################################################################            
             widget.TextBox(
-                    text='-',
-                    fontsize="35",
-                    foreground = colors[14],
-                    background = colors[1],
-                    padding=-2,
-                ),
-            widget.TextBox(
                     text='|~',
                     fontsize="25",
                     foreground = colors[14],
-                    background = colors[1],
+                    background = colors[7],
                     padding=-2,
                 ),
 ######################################################################################################################
