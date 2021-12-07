@@ -3,6 +3,11 @@
 
 #cat  ~/.local/share/qtile/qtile.log   #this is eror log
 
+#qtile cmd-obj -o cmd -f debug
+#qtile cmd-obj -o cmd -f warning
+
+
+
 #############################################
 from typing import List
 from libqtile import bar, layout, widget
@@ -168,7 +173,8 @@ screens = [
                     fontsize="35",
                     foreground = colors[14],
                     background = colors[1],
-                    padding=-2,
+                    padding_x = 1115,
+                    padding_y = 1115,
                 ),
             widget.Sep(
                         linewidth = 1,
