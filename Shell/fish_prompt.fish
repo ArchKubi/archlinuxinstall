@@ -55,6 +55,7 @@ function __ruby_version
 end
 
 function fish_prompt
+  echo " "
   echo -n (set_color white)"___:"(set_color normal)
   __user_host
   __current_path
