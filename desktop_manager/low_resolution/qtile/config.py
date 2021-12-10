@@ -428,7 +428,7 @@ widget.Spacer(background = colors[1],),
                         linewidth = 1,
                         padding = 10,
                         foreground = colors[8],
-                        background = colors[8]
+                        background = colors[0]
                         ),
             widget.TextBox(
                     text='|~} ',
