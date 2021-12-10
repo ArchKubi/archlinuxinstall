@@ -1,0 +1,1 @@
+pamac install base-devel

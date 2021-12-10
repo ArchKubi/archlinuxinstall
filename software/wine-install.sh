@@ -10,7 +10,7 @@ sudo pacman -Syyu
 
 sudo pacman -S lutris wine winetricks wine-mono vkd3d lib32-vkd3d
 yay -S dxvk-bin heroic-games-launcher-bin
-sudo pacman -S steam-native-runtime
+
 
 
 #lutris settings
