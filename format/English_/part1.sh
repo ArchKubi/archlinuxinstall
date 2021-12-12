@@ -76,7 +76,7 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 read -rsn1 -p "######PART2 COPY FİLE############################################" variable; echo
 
-cp  format/English_/part2.sh    /mnt
+cp  part2.sh    /mnt
 arch-chroot /mnt
 
 echo"First part1.sh Finish enter terminale sh part2.sh //Press Enter" variable; echo
