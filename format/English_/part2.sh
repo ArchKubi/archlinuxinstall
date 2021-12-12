@@ -48,9 +48,9 @@ echo "LC_ALL=en_US.UTF-8" >> /etc/environment
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
 
-read -p "Enter Keymap |KEYMAP=trq|---|KEYMAP=us| enter like this: " kpMap
+read -p "Enter Keymap |KEYMAP=trq|---|KEYMAP=us| enter like this: "
 touch /etc/vconsole.conf
-echo kpMap >> /etc/vconsole.conf 
+echo KEYMAP=trq >> /etc/vconsole.conf 
 
 echo "Your language is OK!  //Press Enter" variable; echo
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
