@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/80429360/145705387-f60e2a32-f843-4fc8-8b4a-5ce36989d1ab.png)
+
+
 # ArchFormatTest
 (format
 :--> part1.sh OK!
@@ -16,15 +19,12 @@
 :--> turkish_keyboard.sh OK!
 :--> wine-install.ok)
 
+![image](https://user-images.githubusercontent.com/80429360/145705406-799381cb-ef65-4e34-bace-01e4cb68a170.png)
 
 
-desktop manager
-![2021-10-14-035833_1280x1012_scrot](https://user-images.githubusercontent.com/80429360/137233045-81da2514-4d8b-4e49-823d-3e561249ec29.png)
-
-![2021-10-14-035815_1280x1012_scrot](https://user-images.githubusercontent.com/80429360/137233031-0cba7e7d-aa1a-4932-85a6-83e6dabdc63d.png)
 
 
-![2021-10-14-041207_1280x1012_scrot](https://user-images.githubusercontent.com/80429360/137234294-40a34a9f-adad-4340-8599-0882cd4821d0.png)
 
+desktop manager:
 
 
