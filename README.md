@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/80429360/145705387-f60e2a32-f843-4fc8-8b4a-5ce36989d1ab.png)
+
+
 # ArchFormatTest
 (format
 :--> part1.sh OK!
@@ -16,8 +19,9 @@
 :--> turkish_keyboard.sh OK!
 :--> wine-install.ok)
 
+![image](https://user-images.githubusercontent.com/80429360/145705406-799381cb-ef65-4e34-bace-01e4cb68a170.png)
 
-![image](https://user-images.githubusercontent.com/80429360/145705369-18de2607-3a7d-4083-93e9-a036d2ecd22b.png)
+
 
 
 
