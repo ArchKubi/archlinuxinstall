@@ -17,14 +17,10 @@
 :--> wine-install.ok)
 
 
-
-desktop manager
-![2021-10-14-035833_1280x1012_scrot](https://user-images.githubusercontent.com/80429360/137233045-81da2514-4d8b-4e49-823d-3e561249ec29.png)
-
-![2021-10-14-035815_1280x1012_scrot](https://user-images.githubusercontent.com/80429360/137233031-0cba7e7d-aa1a-4932-85a6-83e6dabdc63d.png)
+![image](https://user-images.githubusercontent.com/80429360/145705369-18de2607-3a7d-4083-93e9-a036d2ecd22b.png)
 
 
-![2021-10-14-041207_1280x1012_scrot](https://user-images.githubusercontent.com/80429360/137234294-40a34a9f-adad-4340-8599-0882cd4821d0.png)
 
+desktop manager:
 
 
