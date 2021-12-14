@@ -42,7 +42,6 @@ read -rsn1 -p "######################Finish:/Press Enter########################
 ################################################################################################################
 read -rsn1 -p "########## GRAPHIC DRIVE #########################################" variable; echo
 pacman -S xorg xorg-server xorg-xinit xorg-apps
-echo KEYMAP=trq >> /etc/vconsole.conf 
 echo "xorg Completed!   "
 read -rsn1 -p "######################Finish:/Press Enter#########################" variable; echo
 ################################################################################################################
@@ -82,45 +81,45 @@ options=("Mate" "Cinnamon" "Gnome" "Xfce" "Plasma" "Budgie" "Qtile" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
-        "Mate")
+        ("Mate")
         echo "Your Chosen Environment  Mate"
             sudo pacman -S mate mate-extra
             break
             ;;
 
-        "Cinnamon")
+        ("Cinnamon")
         echo "Your Chosen Environment  Cinnamon"
             sudo pacman -S cinnamon nemo-fileroller
             break
             ;;
 
-        "Gnome")
+        ("Gnome")
         echo "Your Chosen Environment  Gnome"
             sudo pacman -S gnome gnome-extra
             break
             ;;
 
 
-        "Xfce")
+        ("Xfce")
         echo "Your Chosen Environment Xfce"
             sudo pacman -S xfce4 xfce4-goodies
             break
             ;;
 
 
-        "Plasma")
+        ("Plasma")
         echo "Your Chosen Environment  Plasma"
             sudo pacman -S plasma kdeplasma-addons
             break
             ;;
 
-        "Budgie")
+        ("Budgie")
         echo "Your Chosen Environment  Budgie"
             sudo pacman -S budgie-desktop
             break
             ;;
 
-        "Qtile")
+        ("Qtile")
         echo "Your Chosen Environment  Qtile"
             sudo pacman -S qtile
             break
@@ -128,7 +127,7 @@ do
 
             
 
-        "Quit")
+        ("Quit")
             break
             ;;
     esac

@@ -44,13 +44,72 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 read -rsn1 -p "###### SYSTEM LANGUAGE ############################################" variable; echo
 #---------------------------------------------------------------#
 read -rsn1 -p "dont forget edit this --> part2.sh : English Language = en_US.UTF-8 //Press Enter" variable; echo
-echo "LC_ALL=en_US.UTF-8" >> /etc/environment
-echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
-echo "LANG=en_US.UTF-8" > /etc/locale.conf
+# echo "LC_ALL=en_US.UTF-8" >> /etc/environment
+# echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+# echo "LANG=en_US.UTF-8" > /etc/locale.conf
+
+PS3='Please enter your System Language : '
+options=("Turkish" "English" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        ("Turkish")
+        echo "Your Chosen Turkish"
+            echo "LC_ALL=en_US.UTF-8" >> /etc/environment
+            echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+            echo "LANG=en_US.UTF-8" > /etc/locale.conf
+            break
+            ;;
+
+        ("English")
+        echo "Your Chosen English/American"
+            echo "LC_ALL=tr_TR.UTF-8" >> /etc/environment
+            echo "tr_TR.UTF-8 UTF-8" >> /etc/locale.gen
+            echo "LANG=tr_TR.UTF-8" > /etc/locale.conf
+            break
+            ;;
+
+        ("Quit")
+            break
+            ;;
+    esac
+done
+
+#---------------------------------------------------------------#
 
 echo "Keymap |KEYMAP=trq|---|KEYMAP=us|"
-touch /etc/vconsole.conf
-echo KEYMAP=trq >> /etc/vconsole.conf 
+# touch /etc/vconsole.conf
+# echo KEYMAP=trq >> /etc/vconsole.conf 
+
+PS3='Please enter your Keyboard Language : '
+
+
+options=("Turkish" "English" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Turkish")
+        echo "Your Chosen Turkish"
+            touch /etc/vconsole.conf
+            KEYMAP=trq >> /etc/vconsole.conf 
+            break
+            ;;
+
+        "English")
+        echo "Your Chosen English/American"
+            touch /etc/vconsole.conf
+            KEYMAP=us >> /etc/vconsole.conf 
+            break
+            ;;
+
+        "Quit")
+            break
+            ;;
+    esac
+done
+
+
+
 
 echo "Your language is OK!  //Press Enter" variable; echo
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
