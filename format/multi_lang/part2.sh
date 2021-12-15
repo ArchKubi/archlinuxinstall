@@ -90,15 +90,13 @@ do
     case $opt in
         "Turkish")
         echo "Your Chosen Turkish"
-            touch /etc/vconsole.conf
-            KEYMAP=trq >> /etc/vconsole.conf 
+           echo KEYMAP=trq >> /etc/vconsole.conf 
             break
             ;;
 
         "English")
         echo "Your Chosen English/American"
-            touch /etc/vconsole.conf
-            KEYMAP=us >> /etc/vconsole.conf 
+          echo KEYMAP=us >> /etc/vconsole.conf 
             break
             ;;
 
