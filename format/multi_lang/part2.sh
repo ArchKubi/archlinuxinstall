@@ -55,17 +55,17 @@ do
     case $opt in
         ("Turkish")
         echo "Your Chosen Turkish"
-            echo "LC_ALL=en_US.UTF-8" >> /etc/environment
-            echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
-            echo "LANG=en_US.UTF-8" > /etc/locale.conf
+            echo "LC_ALL=tr_TR.UTF-8" >> /etc/environment
+            echo "tr_TR.UTF-8 UTF-8" >> /etc/locale.gen
+            echo "LANG=tr_TR.UTF-8" > /etc/locale.conf
             break
             ;;
 
         ("English")
         echo "Your Chosen English/American"
-            echo "LC_ALL=tr_TR.UTF-8" >> /etc/environment
-            echo "tr_TR.UTF-8 UTF-8" >> /etc/locale.gen
-            echo "LANG=tr_TR.UTF-8" > /etc/locale.conf
+            echo "LC_ALL=en_US.UTF-8" >> /etc/environment
+            echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+            echo "LANG=en_US.UTF-8" > /etc/locale.conf
             break
             ;;
 
@@ -125,7 +125,7 @@ read -rsn1 -p "Turkey Time Zone  //Press Enter" variable; echo
 timedatectl set-timezone Europe/Istanbul 
 timedatectl set-local-rtc 1
 
-read -rsn1 -p "$timezone Completed! //Press Enter" variable; echo
+read -rsn1 -p "Timezone Completed! //Press Enter" variable; echo
 locale-gen en_US.UTF-8
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
