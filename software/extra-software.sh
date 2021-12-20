@@ -1,11 +1,36 @@
 #!/bin/bash
 
 sudo pacman -S exfat-utils fuse-exfat a52dec faac faad2 jasper lame libdca libdv gst-libav libmad libmpeg2 libtheora wavpack x264 xvidcore  libdvdcss libdvdread libdvdnav  dvd+rw-tools dvdauthor dvgrab 
-sudo pacman -S xarchiver zip unzip mtpfs gvfs-mtp jshon expac htop lxappearance neofetch nitrogen xfce4-terminal qbittorrent leafpad 
+sudo pacman -S xarchiver zip unzip mtpfs gvfs-mtp jshon expac htop lxappearance neofetch nitrogen cool-retro-term qbittorrent leafpad 
 sudo pacman -S variety rofi scrot vlc ristretto net-tools p7zip unrar gparted conky jdk-openjdk emacs
 
-echo sudo pacman -S amd-ucode or 
-sudo pacman -S intel-ucode
+
+PS3='Please enter your choice: '
+options=("amd" "intel" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "AMD")
+        echo "you chose AMD"
+            sudo pacman -S amd-ucode or 
+            break
+            ;;
+
+        "intel")
+        echo "you chose intel"
+            sudo pacman -S intel-ucode
+            break
+            ;;
+
+
+
+        "Quit")
+            break
+            ;;
+    esac
+done
+
+
 
 sudo pacman -Rdd adwaita-icon-theme
 
@@ -20,6 +45,7 @@ do
         "Firefox")
         echo "you chose Firefox"
             sudo pacman -S firefox
+            break
             ;;
 
         "Quit")
