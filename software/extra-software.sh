@@ -45,6 +45,7 @@ do
         "QuteBrowser")
         echo "you chose QuteBrowser"
             sudo pacman -S qutebrowser
+	    sudo pacman -S python-adblock
             break
             ;;
 
