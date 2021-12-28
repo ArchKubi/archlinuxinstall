@@ -82,20 +82,19 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 
 ################################################################################################################
 read -rsn1 -p "##### EXTRA SETTINGS  #############################################" variable; echo
-pacstrap -i /mnt base base-devel linux linux-zen nano linux-firmware
-sleep 3
 echo "pacstrap -i /mnt base base-devel linux linux-zen nano linux-firmware"
-pacstrap /mnt grub
 sleep 3
+pacstrap -i /mnt base base-devel linux linux-zen nano linux-firmware
 echo "pacstrap /mnt grub"
 
-
-echo -n "pacstrap finish "
-read -rsn1 -p "//Press Enter" variable; echo
-
-genfstab -p /mnt >> /mnt/etc/fstab
 sleep 3
+pacstrap /mnt grub
+echo -n "pacstrap finish "
+
 echo "genfstab -p /mnt >> /mnt/etc/fstab"
+sleep 3
+genfstab -p /mnt >> /mnt/etc/fstab
+
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
 
@@ -104,11 +103,14 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 read -rsn1 -p "######PART2 COPY FİLE############################################" variable; echo
 
-cp  part2.sh    /mnt
-sleep 3
 echo "copy file part2.sh ----> /mnt"
-arch-chroot /mnt
 sleep 3
+cp  part2.sh    /mnt
+
+echo "arch-chroot /mnt"
+sleep 3
+arch-chroot /mnt
+
 
 echo"First part1.sh Finish enter terminale sh part2.sh //Press Enter" variable; echo
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
