@@ -39,7 +39,8 @@ sleep 1
 
 ################################################################################################################
 read -rsn1 -p "##### CREATING HARD DISK  #############################################" variable; echo
-echo "dont forget 1:swap 2:boot 3:harddisk(system) "
+echo "dont forget 1:type-swap 2:boot 3:harddisk not dual boot(system) "
+sleep 5
 cfdisk 
 
 mkswap /dev/sda1
