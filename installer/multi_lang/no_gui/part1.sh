@@ -74,7 +74,7 @@ mount /dev/sda2 /mnt/boot
 echo "mount /dev/sda2 /mnt/boot"
 sleep 3
 
-echo -n "harddisk Finish "
+echo "harddisk Finish "
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
 
@@ -85,11 +85,12 @@ read -rsn1 -p "##### EXTRA SETTINGS  ###########################################
 echo "pacstrap -i /mnt base base-devel linux linux-zen nano linux-firmware"
 sleep 3
 pacstrap -i /mnt base base-devel linux linux-zen nano linux-firmware
-echo "pacstrap /mnt grub"
 
+echo "pacstrap /mnt grub"
 sleep 3
 pacstrap /mnt grub
-echo -n "pacstrap finish "
+echo "pacstrap finish "
+
 
 echo "genfstab -p /mnt >> /mnt/etc/fstab"
 sleep 3
@@ -102,7 +103,7 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 
 ################################################################################################################
 read -rsn1 -p "######PART2 COPY FİLE############################################" variable; echo
-echo"First part1.sh Finish enter terminale sh part2.sh //Press Enter" variable; echo
+echo "First part1.sh Finish enter terminale sh part2.sh //Press Enter" variable; echo
 
 
 echo "copy file part2.sh ----> /mnt"

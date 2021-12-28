@@ -13,8 +13,8 @@ echo "systemctl enable NetworkManager.service"
 sleep 3
 systemctl enable NetworkManager.service
 
-echo -n "enabled network manager  "
-read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
+echo "enabled network manager  "
+read -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
 
 
