@@ -45,9 +45,11 @@ cfdisk
 mkswap /dev/sda1
 echo "mkswap /dev/sda1"
 sleep 3
+
 mkfs.ext4 /dev/sda2
 echo "mkfs.ext4 /dev/sda2"
 sleep 3
+
 mkfs.ext4 /dev/sda3
 echo "mkfs.ext4 /dev/sda3"
 sleep 3
@@ -58,12 +60,15 @@ read -rsn1 -p "//Press Enter" variable; echo
 swapon /dev/sda1
 echo "SwapON /dev/sda1"
 sleep 3
+
 mount /dev/sda3 /mnt
 echo "mount /dev/sda3 /mnt"
 sleep 3
+
 mkdir /mnt/boot
 echo "mkdir /mnt/boot"
 sleep 3
+
 mount /dev/sda2 /mnt/boot
 echo "mount /dev/sda2 /mnt/boot"
 sleep 3

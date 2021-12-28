@@ -9,7 +9,7 @@ read -p "User Name: " userName
 useradd -m -G wheel -s /bin/bash $userName
 passwd $userName
 
-read -rsn1 -p "do not forget it //Press Enter" variable; echo
+
 echo   "##"
 echo   "## User privilege specification"
 echo   "##"
@@ -17,8 +17,8 @@ echo   "root ALL=(ALL) ALL # this is root "
 echo   "yourUserName ALL=(ALL) ALL <--- add this line"
 echo   "##"
 echo   "##"
-sleep 3
-read -rsn1 -p "User creation Done!    //Press Enter" variable; echo
+sleep 5
+read -rsn1 -p "do not forget it //Press Enter" variable; echo
 
 nano /etc/sudoers
 read -rsn1 -p "SUDO User creation Done!     //Press Enter" variable; echo
@@ -68,8 +68,6 @@ echo "systemctl enable lightdm.service"
 sleep 3
 systemctl enable lightdm.service
 
-read -rsn1 -p "######################Finish:/Press Enter#########################" variable; echo
-
 echo "LightDM Completed!    "
 read -rsn1 -p "######################Finish:/Press Enter#########################" variable; echo
 ################################################################################################################
@@ -100,18 +98,24 @@ do
     case $opt in
         ("Mate")
         echo "Your Chosen Environment  Mate"
+            echo "sudo pacman -S mate mate-extra"
+            sleep 3
             sudo pacman -S mate mate-extra
             break
             ;;
 
         ("Cinnamon")
         echo "Your Chosen Environment  Cinnamon"
+            echo "sudo pacman -S cinnamon nemo-fileroller"
+            sleep 3
             sudo pacman -S cinnamon nemo-fileroller
             break
             ;;
 
         ("Gnome")
         echo "Your Chosen Environment  Gnome"
+            echo "sudo pacman -S gnome gnome-extra"
+            sleep 3
             sudo pacman -S gnome gnome-extra
             break
             ;;
@@ -119,6 +123,8 @@ do
 
         ("Xfce")
         echo "Your Chosen Environment Xfce"
+            echo "sudo pacman -S xfce4 xfce4-goodies"
+            sleep 3
             sudo pacman -S xfce4 xfce4-goodies
             break
             ;;
@@ -126,18 +132,24 @@ do
 
         ("Plasma")
         echo "Your Chosen Environment  Plasma"
+            echo "sudo pacman -S plasma kdeplasma-addons"
+            sleep 3
             sudo pacman -S plasma kdeplasma-addons
             break
             ;;
 
         ("Budgie")
         echo "Your Chosen Environment  Budgie"
+            echo "sudo pacman -S budgie-desktop"
+            sleep 3
             sudo pacman -S budgie-desktop
             break
             ;;
 
         ("Qtile")
         echo "Your Chosen Environment  Qtile"
+            echo "sudo pacman -S qtile"
+            sleep 3
             sudo pacman -S qtile
             break
             ;;
