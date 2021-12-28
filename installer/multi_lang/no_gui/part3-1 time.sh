@@ -34,9 +34,7 @@ timedatectl status
 read -rsnl -p "if you see your time zone NICE! if you not report please"
 read -rsn1 -p "Timezone Completed! //Press Enter" variable; echo
 
-echo "locale-gen"
-sleep 3
-locale-gen
+
 
 
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
