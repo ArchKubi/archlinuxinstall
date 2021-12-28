@@ -20,6 +20,8 @@ echo   "##"
 sleep 5
 read -rsn1 -p "do not forget it //Press Enter" variable; echo
 
+echo "nano /etc/sudoers"
+sleep3
 nano /etc/sudoers
 read -rsn1 -p "SUDO User creation Done!     //Press Enter" variable; echo
 ################################################################################################################

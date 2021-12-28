@@ -38,6 +38,8 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 read -rsn1 -p "###### Root Password ##############################################" variable; echo
 read -rsn1 -p "You type root password, when login you will enter root and password, of course you know that .//Press Enter" variable; echo
+echo "passwd root"
+sleep 3
 passwd root
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
@@ -51,7 +53,7 @@ read -rsn1 -p "###### SYSTEM LANGUAGE ##########################################
 read -rsn1 -p "if you speak another language dont forget edit this --> part2.sh : English Language = en_US.UTF-8 //Press Enter" variable; echo
 
 PS3='Please enter your System Language : '
-options=("Turkish" "English" "Quit")
+options=("Turkish" "English")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -64,7 +66,6 @@ do
             echo "LANG=tr_TR.UTF-8" > /etc/locale.conf
             echo "LANG=tr_TR.UTF-8 > /etc/locale.conf"
             sleep 3
-            
             break
             ;;
 
@@ -79,23 +80,14 @@ do
             sleep 3
             break
             ;;
-
-        ("Quit")
-            break
-            ;;
     esac
 done
 
 #---------------------------------------------------------------#
-
-echo "Keymap |KEYMAP=trq|---|KEYMAP=us|"
-# touch /etc/vconsole.conf
-# echo KEYMAP=trq >> /etc/vconsole.conf 
-
 PS3='Please enter your Keyboard Language : '
 
 
-options=("Turkish" "English" "Quit")
+options=("Turkish" "English")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -112,10 +104,6 @@ do
           echo KEYMAP=us >> /etc/vconsole.conf
           echo "KEYMAP=us >> /etc/vconsole.conf"
           sleep 3
-            break
-            ;;
-
-        "Quit")
             break
             ;;
     esac
