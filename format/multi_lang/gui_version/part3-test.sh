@@ -1,11 +1,7 @@
 #!/bin/bash
 
-
-
-#### Main Start Code
-whiptail \
-    --title "this is part3" \
-    --msgbox "this is how you use your arch Linux and thats it dont forget feedback" 8 78
+if (whiptail --title "this is part3e" --yesno "this is how you use your arch Linux and thats it dont forget feedback" 8 78)
+    then
 
 computer_name = $(whiptail --inputbox "Enter your UserName" 10 30 3>&1 1>&2 2>&3)
             echo "$userName" >> /etc/hostname
@@ -62,6 +58,9 @@ systemctl enable lightdm.service
 
 echo "LightDM Completed!    "
 ##################################################################
+whiptail \
+    --title "computer xterm" \
+    --msgbox "there is only xterm" 8 78
 echo "pacman -S xterm"
 sleep 3
 pacman -S xterm
@@ -69,7 +68,7 @@ pacman -S xterm
 ##################################################################
 #!/bin/bash 
 function advancedMenu() {
-    ADVSEL=$(whiptail --title "Advanced Menu" --fb --menu "Choose an option" 15 60 4 \
+    ADVSEL=$(whiptail --title "Advanced Menu" --fb --menu "Choose an option" 20 60 8  \
         "1" "Qtile" \
         "2" "Plasma" \
         "3" "Xfce"\
@@ -119,3 +118,9 @@ whiptail \
     --title "computer restart now bye" \
     --msgbox "this is the end bye bro thanks for using my installer ;)" 8 78
 reboot
+
+
+    else
+        echo "Fu.. YOU!"
+fi
+

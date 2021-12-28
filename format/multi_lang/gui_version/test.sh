@@ -1,6 +1,6 @@
 #!/bin/bash 
 function advancedMenu() {
-    ADVSEL=$(whiptail --title "Advanced Menu" --fb --menu "Choose an option" 15 60 4 \
+    ADVSEL=$(whiptail --title "Advanced Menu" --fb --menu "Choose an option" 20 60 8 \
         "1" "Qtile" \
         "2" "Plasma" \
         "3" "Xfce"\
