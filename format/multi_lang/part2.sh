@@ -6,9 +6,12 @@
 read -rsn1 -p "###### NETWORK MANAGER #############################################" variable; echo
 
 pacman -S networkmanager
+sleep 3
 echo "pacman -S networkmanager"
 systemctl enable NetworkManager.service
 echo "systemctl enable NetworkManager.service"
+sleep 3
+
 echo -n "enabled network manager  "
 
 read -rsn1 -p "//Press Enter" variable; echo
@@ -45,10 +48,7 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 read -rsn1 -p "###### SYSTEM LANGUAGE ############################################" variable; echo
 #---------------------------------------------------------------#
-read -rsn1 -p "dont forget edit this --> part2.sh : English Language = en_US.UTF-8 //Press Enter" variable; echo
-# echo "LC_ALL=en_US.UTF-8" >> /etc/environment
-# echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
-# echo "LANG=en_US.UTF-8" > /etc/locale.conf
+read -rsn1 -p "if you speak another language dont forget edit this --> part2.sh : English Language = en_US.UTF-8 //Press Enter" variable; echo
 
 PS3='Please enter your System Language : '
 options=("Turkish" "English" "Quit")
@@ -58,16 +58,25 @@ do
         ("Turkish")
         echo "Your Chosen Turkish"
             echo "LC_ALL=tr_TR.UTF-8" >> /etc/environment
+            echo "LC_ALL=tr_TR.UTF-8 >> /etc/environment"
             echo "tr_TR.UTF-8 UTF-8" >> /etc/locale.gen
+            echo "tr_TR.UTF-8 UTF-8 >> /etc/locale.gen"
             echo "LANG=tr_TR.UTF-8" > /etc/locale.conf
+            echo "LANG=tr_TR.UTF-8 > /etc/locale.conf"
+            sleep 3
+            
             break
             ;;
 
         ("English")
         echo "Your Chosen English/American"
             echo "LC_ALL=en_US.UTF-8" >> /etc/environment
+            echo "LC_ALL=en_US.UTF-8 >> /etc/environment"
             echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+            echo "en_US.UTF-8 UTF-8 >> /etc/locale.gen"
             echo "LANG=en_US.UTF-8" > /etc/locale.conf
+            echo "LANG=en_US.UTF-8 > /etc/locale.conf"
+            sleep 3
             break
             ;;
 
@@ -92,13 +101,17 @@ do
     case $opt in
         "Turkish")
         echo "Your Chosen Turkish"
-           echo KEYMAP=trq >> /etc/vconsole.conf 
+           echo KEYMAP=trq >> /etc/vconsole.conf
+           echo "KEYMAP=trq >> /etc/vconsole.conf"
+           sleep 3
             break
             ;;
 
         "English")
         echo "Your Chosen English/American"
-          echo KEYMAP=us >> /etc/vconsole.conf 
+          echo KEYMAP=us >> /etc/vconsole.conf
+          echo "KEYMAP=us >> /etc/vconsole.conf"
+          sleep 3
             break
             ;;
 
@@ -122,15 +135,36 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 read -rsn1 -p "###### LOCAL TIME #################################################" variable; echo
 read -rsn1 -p "Select Time Zone  Europe/Istanbul My zone //Press Enter" variable; echo
 
+echo "timedatectl list-timezones"
+sleep 3
 timedatectl list-timezones
+
 read -rsn1 -p "Dont Forget Time Zone"
 read -p 'Enter Time Zone Name : ' timezone
+
+echo "timedatectl set-timezone $timezone"
+sleep 3
 timedatectl set-timezone $timezone
+
+
+echo "timedatectl set-local-rtc 1"
+sleep 3
 timedatectl set-local-rtc 1
+
+
+echo "timedatectl status"
+sleep 3
 timedatectl status
+
+
 read -rsnl -p "if you see your time zone NICE! if you not report please"
 read -rsn1 -p "Timezone Completed! //Press Enter" variable; echo
+
+echo "locale-gen"
+sleep 3
 locale-gen
+
+
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
 
@@ -141,10 +175,18 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 read -rsn1 -p "# Last Settings ####################################################" variable; echo
 mkinitcpio -p linux
+echo "mkinitcpio -p linux"
+sleep 3
 
 read -rsn1 -p "mkinitcpio Completed! //Press Enter" variable; echo
 grub-install --recheck /dev/sda
+echo "grub-install --recheck /dev/sda"
+sleep 3
+
 grub-mkconfig -o /boot/grub/grub.cfg
+echo "grub-mkconfig -o /boot/grub/grub.cfg"
+sleep 3
+
 
 echo -n "grub-install ve grub-mkconfig "
 read -rsn1 -p "//Press Enter" variable; echo

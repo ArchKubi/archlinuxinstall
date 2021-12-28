@@ -44,29 +44,29 @@ cfdisk
 
 mkswap /dev/sda1
 echo "mkswap /dev/sda1"
-sleep 1
+sleep 3
 mkfs.ext4 /dev/sda2
 echo "mkfs.ext4 /dev/sda2"
-sleep 1
+sleep 3
 mkfs.ext4 /dev/sda3
 echo "mkfs.ext4 /dev/sda3"
-sleep 1
+sleep 3
 
 echo -n "mkswap ve mkfs.ext4 Finish "
 read -rsn1 -p "//Press Enter" variable; echo
 
 swapon /dev/sda1
 echo "SwapON /dev/sda1"
-sleep 1
+sleep 3
 mount /dev/sda3 /mnt
 echo "mount /dev/sda3 /mnt"
-sleep 1
+sleep 3
 mkdir /mnt/boot
 echo "mkdir /mnt/boot"
-sleep 1
+sleep 3
 mount /dev/sda2 /mnt/boot
 echo "mount /dev/sda2 /mnt/boot"
-sleep 1
+sleep 3
 
 echo -n "harddisk Finish "
 read -rsn1 -p "//Press Enter" variable; echo
@@ -78,8 +78,10 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 ################################################################################################################
 read -rsn1 -p "##### EXTRA SETTINGS  #############################################" variable; echo
 pacstrap -i /mnt base base-devel linux linux-zen nano linux-firmware
+sleep 3
 echo "pacstrap -i /mnt base base-devel linux linux-zen nano linux-firmware"
 pacstrap /mnt grub
+sleep 3
 echo "pacstrap /mnt grub"
 
 
@@ -87,6 +89,7 @@ echo -n "pacstrap finish "
 read -rsn1 -p "//Press Enter" variable; echo
 
 genfstab -p /mnt >> /mnt/etc/fstab
+sleep 3
 echo "genfstab -p /mnt >> /mnt/etc/fstab"
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
@@ -97,8 +100,10 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 read -rsn1 -p "######PART2 COPY FİLE############################################" variable; echo
 
 cp  part2.sh    /mnt
+sleep 3
 echo "copy file part2.sh ----> /mnt"
 arch-chroot /mnt
+sleep 3
 
 echo"First part1.sh Finish enter terminale sh part2.sh //Press Enter" variable; echo
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo

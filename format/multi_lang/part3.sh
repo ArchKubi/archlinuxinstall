@@ -17,6 +17,7 @@ echo   "root ALL=(ALL) ALL # this is root "
 echo   "yourUserName ALL=(ALL) ALL <--- add this line"
 echo   "##"
 echo   "##"
+sleep 3
 read -rsn1 -p "User creation Done!    //Press Enter" variable; echo
 
 nano /etc/sudoers
@@ -28,9 +29,14 @@ read -rsn1 -p "SUDO User creation Done!     //Press Enter" variable; echo
 
 ################################################################################################################
 read -rsn1 -p "######### AUDIO DRIVER ############################################" variable; echo
+echo "pacman -S alsa alsa-utils alsa-plugins"
+sleep 3
 pacman -S alsa alsa-utils alsa-plugins
+
 read -rsn1 -p "alsa Completed!    //Press Enter" variable; echo
 
+echo "pacman -S pulseaudio pavucontrol"
+sleep 3
 pacman -S pulseaudio pavucontrol
 echo "pulseaudio Completed!   " variable; echo
 read -rsn1 -p "######################Finish:/Press Enter#########################" variable; echo
@@ -41,7 +47,10 @@ read -rsn1 -p "######################Finish:/Press Enter########################
 
 ################################################################################################################
 read -rsn1 -p "########## GRAPHIC DRIVE #########################################" variable; echo
+echo "pacman -S xorg xorg-server xorg-xinit xorg-apps"
+sleep 3
 pacman -S xorg xorg-server xorg-xinit xorg-apps
+
 echo "xorg Completed!   "
 read -rsn1 -p "######################Finish:/Press Enter#########################" variable; echo
 ################################################################################################################
@@ -51,8 +60,14 @@ read -rsn1 -p "######################Finish:/Press Enter########################
 
 ################################################################################################################
 read -rsn1 -p "##### Display Manager ################################################" variable; echo
+echo "sudo pacman -S lightdm lightdm-webkit2-greeter wget lightdm-gtk-greeter"
+sleep 3
 sudo pacman -S lightdm lightdm-webkit2-greeter wget lightdm-gtk-greeter
+
+echo "systemctl enable lightdm.service"
+sleep 3
 systemctl enable lightdm.service
+
 read -rsn1 -p "######################Finish:/Press Enter#########################" variable; echo
 
 echo "LightDM Completed!    "
@@ -64,6 +79,8 @@ read -rsn1 -p "######################Finish:/Press Enter########################
 
 ################################################################################################################
 read -rsn1 -p "####### TERMİNAL ##############################################" variable; echo
+echo "pacman -S xterm"
+sleep 3
 pacman -S xterm
 read -rsn1 -p "######################Finish:/Press Enter#########################" variable; echo
 ################################################################################################################
