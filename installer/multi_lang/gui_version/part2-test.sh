@@ -1,12 +1,12 @@
 #!/bin/bash
 
 
-
+################################################################################################################
 #### Main Start Code
 whiptail \
     --title "this is part2" \
     --msgbox "dont forget. this part there is 1 sda if you use gnome boxes change it" 8 78
-
+################################################################################################################
 
 
 if (whiptail --title "part2 starting" --yesno "Are you ready?" 8 78)
@@ -21,10 +21,12 @@ if (whiptail --title "part2 starting" --yesno "Are you ready?" 8 78)
         computer_name = $(whiptail --inputbox "Enter your name" 10 30 3>&1 1>&2 2>&3)
             echo "$computer_name" >> /etc/hostname
             echo "Computer Name OK!"
-            read -rsn1 -p "$computer_name nice name bro  //Press Enter" variable; echo
-        rootPass = $(whiptail --inputbox "Enter Root Password" 10 30 3>&1 1>&2 2>&3)
-            echo "$rootPass" >> /etc/hostname
+        echo "passwd root"
+        sleep 3
+        passwd root
+################################################################################################################
 
+################################################################################################################
     whiptail \
         --title "Let's Choose" \
         --msgbox "Select Your Language" 8 78
@@ -54,8 +56,9 @@ function advancedMenu() {
     esac
 }
 advancedMenu        
+################################################################################################################
 
-
+################################################################################################################
 #System Keynoard Language
 function advancedMenu() {
     ADVSEL=$(whiptail --title "Keynoard Language" --fb --menu "Please enter your Keynoard Language" 15 60 4 \
@@ -78,9 +81,9 @@ function advancedMenu() {
 }
 advancedMenu   
 echo "Your language is OK!  //Press Enter" variable; echo
+################################################################################################################
 
-
-
+################################################################################################################
 timedatectl list-timezones
 read -rsn1 -p "Dont Forget Time Zone"
 
@@ -92,9 +95,10 @@ read -rsn1 -p "Dont Forget Time Zone"
             read -rsnl -p "if you see your time zone NICE! if you not report please"
             read -rsn1 -p "Timezone Completed! //Press Enter" variable; echo
             locale-gen
-
+################################################################################################################
 
 
     else
         echo "Come ON BRUH!"
 fi
+################################################################################################################
