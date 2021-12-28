@@ -123,7 +123,7 @@ read -rsn1 -p "###### LOCAL TIME ###############################################
 read -rsn1 -p "Select Time Zone  Europe/Istanbul My zone //Press Enter" variable; echo
 
 timedatectl list-timezones
-
+read -rsn1 -p "Dont Forget Time Zone"
 read -p 'Enter Time Zone Name : ' timezone
 timedatectl set-timezone $timezone
 timedatectl set-local-rtc 1
