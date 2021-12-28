@@ -24,23 +24,23 @@ if (whiptail --title "Humble Title" --yesno "don't forget I'm not pro if you fou
     and don't forget 1:2:3 or edit this script" 8 78
 
     ##Harddisk
-    mkswap /dev/sda1
-      echo "mkswap /dev/sda1"
-    mkfs.ext4 /dev/sda2
-        echo "mkfs.ext4 /dev/sda2"
-    mkfs.ext4 /dev/sda3
-      echo "mkfs.ext4 /dev/sda3"
+        mkswap /dev/sda1
+            echo "mkswap /dev/sda1"
+        mkfs.ext4 /dev/sda2
+            echo "mkfs.ext4 /dev/sda2"
+        mkfs.ext4 /dev/sda3
+            echo "mkfs.ext4 /dev/sda3"
 
     echo -n "mkswap ve mkfs.ext4 Finish "
 
-    swapon /dev/sda1
-     echo "SwapON /dev/sda1"
-    mount /dev/sda3 /mnt
-     echo "mount /dev/sda3 /mnt"
-    mkdir /mnt/boot
-     echo "mkdir /mnt/boot"
-    mount /dev/sda2 /mnt/boot
-        echo "mount /dev/sda2 /mnt/boot"
+        swapon /dev/sda1
+            echo "SwapON /dev/sda1"
+        mount /dev/sda3 /mnt
+            echo "mount /dev/sda3 /mnt"
+        mkdir /mnt/boot
+            echo "mkdir /mnt/boot"
+        mount /dev/sda2 /mnt/boot
+            echo "mount /dev/sda2 /mnt/boot"
     read -rsn1 -p "Harddisk Finish "
 
 

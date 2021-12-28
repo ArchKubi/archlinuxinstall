@@ -6,9 +6,11 @@
 read -rsn1 -p "###### NETWORK MANAGER #############################################" variable; echo
 
 pacman -S networkmanager
+echo "pacman -S networkmanager"
 systemctl enable NetworkManager.service
-
+echo "systemctl enable NetworkManager.service"
 echo -n "enabled network manager  "
+
 read -rsn1 -p "//Press Enter" variable; echo
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
@@ -118,13 +120,17 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 
 ################################################################################################################
 read -rsn1 -p "###### LOCAL TIME #################################################" variable; echo
-read -rsn1 -p "Turkey Time Zone  //Press Enter" variable; echo
+read -rsn1 -p "Select Time Zone  Europe/Istanbul My zone //Press Enter" variable; echo
 
-timedatectl set-timezone Europe/Istanbul 
+timedatectl list-timezones
+
+read -p 'Enter Time Zone Name : ' timezone
+timedatectl set-timezone $timezone
 timedatectl set-local-rtc 1
-
+timedatectl status
+read -rsnl -p "if you see your time zone NICE! if you not report please"
 read -rsn1 -p "Timezone Completed! //Press Enter" variable; echo
-locale-gen en_US.UTF-8
+locale-gen
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
 

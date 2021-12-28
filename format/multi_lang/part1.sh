@@ -4,11 +4,11 @@
 #                    -`
 #                   .o+`                   ------------------ 
 #                  `ooo/                   OS: Arch Linux x86_64 
-#                 `+oooo:                  Kernel: 5.15.5-zen1-1-zen 
-#                `+oooooo:                 Packages: 1250 (pacman) 
-#                -+oooooo+:                Shell: bash 5.1.12 
-#              `/:-:++oooo+:               DE: qtile 
-#             `/++++/+++++++:              WM: LG3D 
+#                 `+oooo:                  Kernel:  ZEN/Linux
+#                `+oooooo:                  
+#                -+oooooo+:                Shell: bash
+#              `/:-:++oooo+:               
+#             `/++++/+++++++:              
 #            `/++++++++++++++:
 #           `/+++ooooooooooooo/`           
 #          ./ooosssso++osssssso+`          
@@ -30,7 +30,9 @@
 
 ################################################################################################################
 timedatectl set-ntp true
-echo "timedatectl "
+echo "timedatectl set-ntp true"
+sleep 1
+
 ################################################################################################################
 
 
@@ -42,22 +44,29 @@ cfdisk
 
 mkswap /dev/sda1
 echo "mkswap /dev/sda1"
+sleep 1
 mkfs.ext4 /dev/sda2
 echo "mkfs.ext4 /dev/sda2"
+sleep 1
 mkfs.ext4 /dev/sda3
 echo "mkfs.ext4 /dev/sda3"
+sleep 1
 
 echo -n "mkswap ve mkfs.ext4 Finish "
 read -rsn1 -p "//Press Enter" variable; echo
 
 swapon /dev/sda1
 echo "SwapON /dev/sda1"
+sleep 1
 mount /dev/sda3 /mnt
 echo "mount /dev/sda3 /mnt"
+sleep 1
 mkdir /mnt/boot
 echo "mkdir /mnt/boot"
+sleep 1
 mount /dev/sda2 /mnt/boot
 echo "mount /dev/sda2 /mnt/boot"
+sleep 1
 
 echo -n "harddisk Finish "
 read -rsn1 -p "//Press Enter" variable; echo
