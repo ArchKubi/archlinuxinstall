@@ -74,7 +74,6 @@ echo "mount /dev/sda2 /mnt/boot"
 sleep 3
 
 echo -n "harddisk Finish "
-read -rsn1 -p "//Press Enter" variable; echo
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
 
@@ -102,6 +101,8 @@ read -rsn1 -p "######################Finish:/Press-Enter########################
 
 ################################################################################################################
 read -rsn1 -p "######PART2 COPY FİLE############################################" variable; echo
+echo"First part1.sh Finish enter terminale sh part2.sh //Press Enter" variable; echo
+
 
 echo "copy file part2.sh ----> /mnt"
 sleep 3
@@ -112,6 +113,6 @@ sleep 3
 arch-chroot /mnt
 
 
-echo"First part1.sh Finish enter terminale sh part2.sh //Press Enter" variable; echo
+
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################

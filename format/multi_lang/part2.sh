@@ -5,16 +5,15 @@
 ################################################################################################################
 read -rsn1 -p "###### NETWORK MANAGER #############################################" variable; echo
 
-pacman -S networkmanager
-sleep 3
 echo "pacman -S networkmanager"
-systemctl enable NetworkManager.service
+sleep 3
+pacman -S networkmanager
+
 echo "systemctl enable NetworkManager.service"
 sleep 3
+systemctl enable NetworkManager.service
 
 echo -n "enabled network manager  "
-
-read -rsn1 -p "//Press Enter" variable; echo
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
 
@@ -127,7 +126,7 @@ echo "timedatectl list-timezones"
 sleep 3
 timedatectl list-timezones
 
-read -rsn1 -p "Dont Forget Time Zone"
+read -rsn1 -p "Dont Forget Time Zone :----> "
 read -p 'Enter Time Zone Name : ' timezone
 
 echo "timedatectl set-timezone $timezone"
@@ -137,7 +136,10 @@ timedatectl set-timezone $timezone
 
 echo "timedatectl set-local-rtc 1"
 sleep 3
-timedatectl set-local-rtc 1
+timedatectl set-local-rtc 0
+echo "timedatectl set-ntp true"
+sleep 3
+timedatectl set-ntp true 
 
 
 echo "timedatectl status"
@@ -177,9 +179,8 @@ sleep 3
 
 
 echo -n "grub-install ve grub-mkconfig "
-read -rsn1 -p "//Press Enter" variable; echo
 echo "first enter this command 1: exit 2: umount /mnt/boot and umount /mnt "
-echo "restart your computer, you need to do git clone again "
+echo "restart your computer, you need to do git clone again sorry"
 echo "Arch Linux installation Completed but you need next software bro next part3.sh "
 read -rsn1 -p "######################Finish:/Press-Enter#########################" variable; echo
 ################################################################################################################
