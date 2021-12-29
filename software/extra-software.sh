@@ -2,7 +2,7 @@
 
 sudo pacman -S exfat-utils fuse-exfat a52dec faac faad2 jasper lame libdca libdv gst-libav libmad libmpeg2 libtheora wavpack x264 xvidcore  libdvdcss libdvdread libdvdnav  dvd+rw-tools dvdauthor dvgrab 
 sudo pacman -S xarchiver zip unzip mtpfs gvfs-mtp jshon expac htop lxappearance neofetch nitrogen cool-retro-term qbittorrent leafpad 
-sudo pacman -S scrot vlc ristretto net-tools p7zip unrar gparted jdk-openjdk emacs
+sudo pacman -S scrot vlc ristretto net-tools p7zip unrar gparted jdk-openjdk emacs rofi dmenu ranger
 
 
 PS3='Please enter your choice: '
