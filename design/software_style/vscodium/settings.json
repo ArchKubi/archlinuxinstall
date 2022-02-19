@@ -1,0 +1,82 @@
+{
+    "workbench.colorCustomizations": {
+
+// editor
+"editor.background": "#240046",
+"editor.foreground": "#dab6fc",
+"editorError.foreground": "#c77dff",
+"editorError.background": "#757bc8",
+"editorError.border": "#3c096c",
+
+"editor.findMatchBorder": "#3c096c",
+"editor.findMatchHighlightBackground": "#757bc8",
+"editor.findRangeHighlightBackground": "#757bc8",
+"editor.findRangeHighlightBorder": "#3c096c",
+
+"editor.selectionBackground": "#5a189a",
+"editor.selectionForeground": "#c77dff",
+"editor.selectionHighlightBackground": "#9d4edd",
+"editor.selectionHighlightBorder": "#3c096c",
+"editor.hoverHighlightBackground": "#757bc8",
+
+//side
+"sideBar.background": "#240046",
+
+"sideBarTitle.foreground": "#c77dff",
+"sideBarSectionHeader.foreground": "#9d4edd",
+"sideBarSectionHeader.border": "#3c096c",
+"sideBarSectionHeader.background": "#5a189a",
+"sideBar.foreground": "#c77dff",
+"sideBar.border": "#3c096c",
+"scrollbarSlider.background": "#5a189a",
+
+// button
+"button.background": "#240046",
+"button.border": "#3c096c",
+"button.foreground": "#c77dff",
+
+// tab
+"foreground": "#c77dff",
+"tab.inactiveBackground": "#240046",
+"tab.border": "#757bc8",
+"tab.activeForeground": "#c77dff",
+"tab.activeBorderTop": "#3c096c",
+"tab.activeBorder": "#3c096c",
+"tab.activeBackground": "#5a189a",
+"tab.inactiveForeground": "#9d4edd",
+
+// statusBar
+"statusBar.background": "#240046",
+"statusBar.border": "#3c096c",
+"statusBar.foreground": "#c77dff",
+
+
+// panel
+"panel.background": "#240046",
+"panel.border": "#757bc8",
+"panelSectionHeader.foreground": "#c77dff",
+"panelSectionHeader.border": "#3c096c",
+"panelSectionHeader.background": "#5a189a",
+"panelSection.border": "#757bc8",
+"panelInput.border": "#3c096c",
+"panelTitle.inactiveForeground": "#9d4edd",
+"panelTitle.activeForeground": "#dab6fc",
+"panelTitle.activeBorder": "#3c096c",
+
+// activity Bar
+"activityBar.background": "#240046",
+"activityBar.activeBackground": "#830ddd",
+"activityBar.activeBorder": "#3c096c",
+
+"activityBar.border": "#3c096c",
+"activityBar.foreground": "#c77dff",
+"activityBar.inactiveForeground": "#9d4edd",
+"activityBar.activeFocusBorder": "#757bc8",
+
+"activityBarBadge.background": "#240046",
+"activityBarBadge.foreground": "#c77dff",
+
+
+
+    }
+}

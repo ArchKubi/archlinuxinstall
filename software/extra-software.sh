@@ -1,8 +1,8 @@
 #!/bin/bash
 
 sudo pacman -S exfat-utils fuse-exfat a52dec faac faad2 jasper lame libdca libdv gst-libav libmad libmpeg2 libtheora wavpack x264 xvidcore  libdvdcss libdvdread libdvdnav  dvd+rw-tools dvdauthor dvgrab 
-sudo pacman -S xarchiver zip unzip mtpfs gvfs-mtp jshon expac htop lxappearance neofetch nitrogen cool-retro-term qbittorrent leafpad 
-sudo pacman -S scrot vlc ristretto net-tools p7zip unrar gparted jdk-openjdk emacs rofi dmenu ranger zathura-pdf-poppler zathura
+sudo pacman -S xarchiver zip unzip mtpfs gvfs-mtp jshon expac htop lxappearance neofetch cool-retro-term qbittorrent leafpad vim lib32-alsa-lib  lib32-alsa-plugins lib32-libpulse lib32-alsa-oss
+sudo pacman -S scrot vlc ristretto net-tools p7zip unrar gparted jdk-openjdk emacs rofi dmenu ranger zathura-pdf-poppler zathura nomacs picom
 
 
 PS3='Please enter your choice: '

@@ -4,6 +4,8 @@
 #locale: Cannot set LC_CTYPE to default locale: No such file or directory
 #locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 #locale: Cannot set LC_COLLATE to default locale: No such file or directory
+#!/bin/bash
+
 
 sudo su
 echo "LC_ALL=en_US.UTF-8" >> /etc/environment

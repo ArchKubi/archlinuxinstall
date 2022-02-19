@@ -9,9 +9,6 @@ echo  "install starting..."
 sudo pacman -Syyu
 
 sudo pacman -S lutris wine winetricks wine-mono vkd3d lib32-vkd3d
-yay -S dxvk-bin heroic-games-launcher-bin
+yay -S dxvk-bin heroic-games-launcher-bin mangohud
+yay -S vulkan-intel
 
-
-
-#lutris settings
-#https://forum.endeavouros.com/t/linux-gaming-guide/7339#heading--linux-gaming-lutris-game-config

@@ -1,8 +1,9 @@
 #!/bin/bash
 
+#example "2021-11-10 14:14:00"
+#timedatectl set-time "2021-11-29 05:00:00"
 sudo su
-timedatectl set-timezone your_timeZone
-timedatectl set-local-rtc 0
-timedatectl set-ntp true 
+timedatectl set-local-rtc 1
+hwclock --systohc --utc
 exit
 
