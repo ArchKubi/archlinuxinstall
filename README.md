@@ -17,7 +17,6 @@
 
 (fix_problem
 :--> turkish_keyboard.sh OK!
-:--> wine-install.ok)
 
 ![image](https://user-images.githubusercontent.com/80429360/145705406-799381cb-ef65-4e34-bace-01e4cb68a170.png)
 

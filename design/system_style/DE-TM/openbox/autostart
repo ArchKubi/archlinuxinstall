@@ -1,4 +1,0 @@
-picom &
-nitrogen --restore &
-#sh ~/.config/openbox/display.sh  &
-(conky -c ~/.config/openbox/system-overview) &
